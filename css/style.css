@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(249, 249, 249);
+  background-color: #f8f8ff;
 }
 #mainjumbotron {
   color: #f5f5f5;
@@ -12,14 +12,6 @@ body {
   float: bottom;
   text-align: center;
 }
-#rightcardimage {
-  float: right;
-  display: inline;
-}
-img{
-  float: right;
-}
-
 /* canvas {
   display: inline;
   margin: auto;
