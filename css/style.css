@@ -1,0 +1,21 @@
+body {
+  background-color: rgb(249, 249, 249);
+}
+#mainjumbotron {
+  color: #f5f5f5;
+  background-color: rgb(7, 12, 26);
+  border-radius: 0.4em;
+}
+.footer {
+  display: block;
+  clear: all;
+  float: bottom;
+  text-align: center;
+}
+
+/* canvas {
+  display: inline;
+  margin: auto;
+  width: 30%;
+  background-color: rgb(249, 29, 249);
+} */
