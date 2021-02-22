@@ -12,6 +12,13 @@ body {
   float: bottom;
   text-align: center;
 }
+#rightcardimage {
+  float: right;
+  display: inline;
+}
+img{
+  float: right;
+}
 
 /* canvas {
   display: inline;
