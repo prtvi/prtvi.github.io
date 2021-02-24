@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Steganography</title>
+    <title>Projects · Steganography</title>
 </head>
 
 <body>
@@ -26,11 +26,14 @@
 
             <div class="collapse navbar-collapse" id="navbarsExample07">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="./projects.html">All projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Music</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -57,8 +60,294 @@
 
     <div class="container">
         <div class="container">
-            <h1>Steganography</h1>
-            <p>Its the arrt</p>
+            <br>
+            <h1><em>steganography</em></h1>
+
+            <div class="container">
+                <small class="text-muted"><em>by Prithviraj Vernekar</em></small>
+            </div>
+
+            <div class="container">
+                <br>
+                <p class="text-content">Steganography is the technique of hiding secret data within an ordinary,
+                    non-secret, file or message
+                    in order to avoid detection. The data is stored in inside an ordinary media file such as an image or
+                    video or maybe an audio file. This done to avoid suspicion, as using an ordinary file does not
+                    attract attention.
+                </p>
+                <p class="text-content">
+                    Steganography can be used to conceal any forms of digital data – image/text/audio/video. And not
+                    just that, any form of digital data can be concealed in any form of digital data. In modern
+                    practices, often the data to be hidden is first encrypted in some form and then concealed inside of
+                    media files. This adds a layer of security to the data.
+                </p>
+
+                <div class="rside-image">
+                    <figure class="figure">
+                        <img src="./images/steg/bit representation.png" class="figure-img img-fluid rounded"
+                            alt="Fig. 1: 8-bit representation of an integer.">
+                        <figcaption class="figure-caption">Fig. 1: 8-bit representation of an integer </figcaption>
+                    </figure>
+                </div>
+
+                <p class="text-content">
+                    This project speaks of how image steganography works. There exist two implementations - one with
+                    hiding an image inside of another, the other involves hiding plain text inside of an image. So how
+                    exactly do you think this process works?
+                </p>
+                <p class="text-content">
+                    The idea of steganography for this project is achieved with the LSB technique - by pixel value
+                    modifications, although there are different and much better/efficient ways to do this, but LSB
+                    technique is quite easy to understand and so is its implementation.
+
+                </p>
+                <p class="text-content">
+                    Every pixel in an image is composed of three
+                    primary colours, and the intensity of each of the
+                    three primary colours determines the colour of the pixel. Every colour in a pixel is represented as
+                    an integer in the range 0 – 255. Therefore every colour can be represented as 8-bit binary number.
+                </p>
+
+                <p class="text-content">
+                    If we were to look at the values (r, g, and b) (for example) of a pixel in decimal
+                    representation, we get something like: rgb(24, 200, 120) this representation can be split
+                    into three parts – red (24), green (200) and blue (120). Each of these numbers can be
+                    represented in binary as an 8-bit binary number – red (0001_1000), green (1100_1000)
+                    and blue (0111_1000). Here each representation in binary is split into MSBs and LSBs
+                    using an underscore. Refer Fig. 1.
+
+                </p>
+                <p class="text-content">
+                    As the value of any number depends on its most significant digit, therefore altering the
+                    least significant digit would not change its value by any significant amount. We use this
+                    concept to implement steganography.
+                </p>
+                <p class="text-content">
+                    Now let us look at how each of the processes of steganography work.
+                </p>
+                <br>
+
+                <h4>1. Img2img - to hide an image inside of another</h4>
+                <br>
+
+                <p class="text-content">
+                    The basic idea of this process is to hide an image inside of another. In other words, given
+                    a cover/foreground image and a message image (message image is to hidden inside of the
+                    cover image) the process produces a third image in which the message image is to be hidden
+                    inside of the cover image. The output image holds enough information to reproduce the
+                    two inputted images. This is done using the extraction process, about which we will discuss further.
+                    Let us denote each of the images as follows: message image as <em>'message'</em>, foreground/cover
+                    image as <em>'foreground'</em> and output image as
+                    <em>'output'</em>.
+                </p>
+
+                <br>
+                <h5>1.1 Process</h5>
+
+
+                <p class="text-content">
+                    For this process, <em>'output'</em> is produced from the given two input images.
+                    The <em>'output'</em> is the result of hiding one image inside of another. The pixel values of
+                    the <em>'output'</em> are the resultant of adding the MSBs of the pixel values of the
+                    two images. The <em>'message'</em> is substituted in the
+                    lower order (as LSBs in <em>'output'</em>) whereas the image that is insignificant that is
+                    <em>'foreground'</em>,
+                    its MSBs are placed in the higher order (as MSBs) in the <em>'output'</em>. The output image is seen
+                    with pixels values mainly from the foreground image. This is done three times – once for
+                    each colour and this happens for every pixel.
+                </p>
+
+                <p class="text-content">
+                    This process can be visualized in the following way: suppose we have two pixels from
+                    the <em>'foreground'</em> and <em>'message'</em> with red value = 72 (= fore_red, for
+                    <em>'foreground'</em>) and red value =
+                    127 (= msg_red, for <em>'message'</em>). We will visualize this only for the red pixel.
+                </p>
+
+                <p class="text-content-center"><b>fore_red = 72d</b> and <b>msg_red = 127d</b></p>
+                <p class="text-content">the binary representations of each are:</p>
+                <p class="text-content-center"><b>fore_red = 0100_0111b</b> and <b>msg_red = 0111_1111b</b></p>
+
+                <p class="text-content">
+                    Let’s say the <em>'output'</em> image’s red value of the corresponding pixel is <b>'out_red'</b>,
+                    further steps are as shown below:
+                </p>
+
+                <div class="center-image">
+                    <figure class="figure">
+                        <img src="./images/steg/process.png" class="figure-img img-fluid rounded"
+                            alt="Fig. 2: Process of pixel modifications for LSB technique">
+                        <figcaption class="figure-caption">Fig. 2: Process of pixel modifications for LSB technique.
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <p class="text-content">
+                    We observe that <b>out_red = 71d</b> which is closer to <b>fore_red = 72d</b>. Here we observe that
+                    MSBs
+                    mostly determine the magnitude of a number. As we have seen here, the number
+                    of bits replaced in the <em>'output'</em> is equal to 4, depending upon the preference and the
+                    choice
+                    of quality after extraction we can replace lesser or more than 4 bits the similar way.
+
+                </p>
+
+                <p class="text-content">
+                    The mathematical calculation performed on each pixel to achieve this replacement is as
+                    follows:
+                </p>
+                <p class="text-content-center"><b>out_red = floor(fore_red / divider) * divider + floor(msg_red /
+                        divider)</b></p>
+                <p class="text-content">where, divider = 2 ^ (number of bits to replace)</p>
+                <p class="text-content">
+                    This is performed without converting the pixel values into binary, rather it is performed
+                    on decimal values itself.
+                </p>
+                <p class="text-content">
+                    For example, as visualized above, let fore_red = 72d, msg_red = 127d, divider = 2^4 = 16, then using
+                    the above equation to find out_red:
+                </p>
+                <p class="text-content-center"><b>out_red = floor(72 / 16) * 16 + floor(127 / 16)</b></p>
+                <p class="text-content-center"><b>= 4 * 16 + 7</b></p>
+                <p class="text-content-center"><b>out_red = 71d</b></p>
+                <br>
+                <h5>1.1 Extraction</h5>
+
+                <p class="text-content">
+                    While extraction (we produce two images – message and foreground) as we have seen;
+                    only the MSBs play a main role in the intensity of a colour. Therefore while extracting
+                    the images, the images are formed in the following way:
+                </p>
+
+                <p class="text-content">
+                    The pixels from the <em>'output'</em> are used to extract the MSBs and LSBs. The MSBs of
+                    pixels from the <em>'output'</em> represent the <em>'foreground'</em> and the LSBs represent the
+                    <em>'foreground'</em> image. After performing mathematical operations on these pixel values, we can
+                    extract the MSBs and the LSBs. As we have seen, only the MSBs mostly determine the
+                    colour intensity of the pixel, therefore as a procedure of extraction, we reproduce two
+                    images from the <em>'output'</em> image. One – is the image using the MSBs (<em>'foreground'</em>)
+                    and the
+                    second – is the image using the LSBs from the <em>'output'</em> image. The remaining LSB bits in
+                    both – <em>'message'</em> and <em>'foreground'</em> image are substituted as 0s. Substituting the
+                    LSBs as 0s
+                    in these two images does not affect the images in any considerable way. In fact, the images (before
+                    steganography and after extraction) when compared look quite similar.
+                </p>
+
+                <p class="text-content">
+                    This process can be visualized in the following way: suppose we have the output pixel (out_red
+                    - like discussed above) with red value = 71d
+                </p>
+
+                <p class="text-content-center"><b>out_red = 71d</b></p>
+                <p class="text-content-center"><b>out_red = 0100_1111b</b></p>
+
+                <p class="text-content">
+                    Let’s say the two extracted images have the same notation (fore_red and msg_red), the extraction can
+                    be visualized in the following way:
+                </p>
+
+                <div class="center-image">
+                    <figure class="figure">
+                        <img src="./images/steg/extraction.png" class="figure-img img-fluid rounded" alt="Fig. 3: Process of pixel modifications for extraction of
+                            'message' and 'foreground' images.">
+                        <figcaption class="figure-caption">Fig. 3: Process of pixel modifications for extraction of
+                            <em>'message'</em> and <em>'foreground'</em> images.
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <p class="text-content">
+                    Again the base is 2, therefore <b>divider = 2^4 = 16</b>, the mathematical calculation performed
+                    on each pixel to achieve this process is as follows, suppose we are interested in extracting
+                    only the message image, therefore the pixel value for the message is given by:
+
+                </p>
+                <p class="text-content-center"><b>msg_red = (out_red % divider) * divider</b></p>
+
+                <p class="text-content">
+                    where, divider = 2 ^ (number of bits to replace)
+                </p>
+
+                <p class="text-content">
+                    For example, as visualized above, let out_red = 71d, divider = 2^4 = 16, then using the above
+                    equation to find or:
+                </p>
+
+                <p class="text-content-center"><b>msg_red = (71 % 16) * 16</b></p>
+                <p class="text-content-center"><b> = 7 * 16</b></p>
+                <p class="text-content-center"><b>msg_red = 112d</b></p>
+
+                <p class="text-content">
+                    Therefore the extracted values are closer to the original values. Though the values may
+                    differ by large amount, this happens for every colour in every pixel and so it becomes
+                    negligible on a large scale.
+                </p>
+                <p class="text-content">
+                    Also to note that the number of bits we use to replace also determines the quality of the
+                    output image. If we use lesser number of bits to be replaced we get different results.
+                </p>
+                <br>
+
+                <h4>2. Txt2img - to hide plain text inside an image</h4>
+                <br>
+
+                <p class="text-content">
+                    The basic idea in this process is to hide plain text data into an image. Given an image, the
+                    user is prompted to input the text to be hidden, and a secret key. This text data is then
+                    stored into the image. While extraction, the user is prompted to input the secret key first,
+                    if the secret key is correct then the hidden text is displayed to the user, else the hidden
+                    text is not displayed.
+                </p>
+                <br>
+                <h5>2.1 Process</h5>
+
+                <p class="text-content">
+                    To be able to hide plain text data into an image, we will first need to know how many
+                    LSB bits from the pixels we will be replacing in the image. For this implementation just 1-bit is
+                    used for every pixel color value in the image.
+                </p>
+                <p class="text-content">
+                    To replace the bits into the image, first we will have to convert the text into binary
+                    representation as well. We achieve this by converting every character from the text to its
+                    corresponding <a href="https://www.w3schools.com/charsets/ref_html_ascii.asp"
+                        target="_blank">ASCII</a> value (which is an integer). Further converting this integer value
+                    into binary representation will give us the binary representation of each character from
+                    the text.
+                </p>
+                <p class="text-content">
+                    As we have seen that every color in a pixel has an 8-bit representation, we will extract the
+                    binary representation of the characters from the text in 8-bit representation as well. Doing
+                    this also helps ease the extraction process.
+                </p>
+                <p class="text-content">
+                    During the process of steganography, we produce a continuous stream of bits from the
+                    text; this stream of bits is then used to replace the last LSB in the image pixel. For every
+                    required pixel in the image, the last bit of that pixel is replaced by the bit from the stream
+                    of bits. We also use a special identifier at the end of the text so as to know when to stop
+                    the replacement. The output is the image with the pixel values modified.
+                </p>
+                <br>
+                <h5>2.2 Extraction</h5>
+
+                <p class="text-content">
+                    During the extraction process (with the encrypted image as input), we select the
+                    appropriate pixels where the replacement was originally done. Then for these pixels, the
+                    last bit is extracted and again a stream of bits is produced. Using this stream of bits, every
+                    time 8-bits from the stream are selected and converted to integer and then converted to
+                    character (reverse of what we had done during steganography). Every character produced
+                    is appended to the final text. Also each character is compared to the special identifier so
+                    as to stop the process as soon as the special identifier is found. The output is the hidden
+                    text extracted from the image.
+                </p>
+
+                <br>
+                <p class="text-content">
+                    You can find the implementation in MATLAB <a href="https://github.com/prithviie/steganography.git" target="_blank">here</a> .
+                </p>
+
+
+            </div>
         </div>
     </div>
 

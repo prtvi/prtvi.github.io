@@ -1,3 +1,4 @@
+/* main -- in all */
 body {
   background-color: #f8f8ff;
 }
@@ -12,9 +13,47 @@ body {
   float: bottom;
   text-align: center;
 }
-/* canvas {
-  display: inline;
-  margin: auto;
-  width: 30%;
-  background-color: rgb(249, 29, 249);
-} */
+/* main -- in all */
+
+/* stegano.html */
+@media (min-width: 1000px) {
+  .text-content {
+    /* steg page for text */
+    width: 60%;
+  }
+  .text-content-center {
+    /* steg page for text for bold texts for values */
+    width: 60%;
+    text-align: center;
+  }
+  .rside-image {
+    /* for steg page for right side images */
+    display: inline;
+    width: 35%;
+    float: right;
+    text-align: center;
+  }
+  .center-image {
+    /* steg page for center image */
+    width: 45%;
+    clear: both;
+    text-align: center;
+    margin-left: 7%;
+  }
+}
+@media (max-width: 880px) {
+  .text-content-center {
+    /* steg page for text for bold texts for values */
+    text-align: center;
+  }
+  .center-image {
+    /* steg page for center image */
+    clear: both;
+    text-align: center;
+  }
+  .rside-image {
+    /* for steg page for right side images */
+    text-align: center;
+  }
+}
+/* stegano.html */
