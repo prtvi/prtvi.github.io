@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
 
     <title>Projects · Steganography</title>
 </head>
@@ -27,10 +27,10 @@
             <div class="collapse navbar-collapse" id="navbarsExample07">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../../index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="./projects.html">All projects</a>
+                        <a class="nav-link" href=".././all-projects.html">All projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Music</a>
@@ -61,7 +61,7 @@
     <div class="container">
         <div class="container">
             <br>
-            <h1><em>steganography</em></h1>
+            <h1><em>Steganography</em></h1>
 
             <div class="container">
                 <small class="text-muted"><em>by Prithviraj Vernekar</em></small>
@@ -82,14 +82,6 @@
                     media files. This adds a layer of security to the data.
                 </p>
 
-                <div class="rside-image">
-                    <figure class="figure">
-                        <img src="./images/steg/bit representation.png" class="figure-img img-fluid rounded"
-                            alt="Fig. 1: 8-bit representation of an integer.">
-                        <figcaption class="figure-caption">Fig. 1: 8-bit representation of an integer </figcaption>
-                    </figure>
-                </div>
-
                 <p class="text-content">
                     This project speaks of how image steganography works. There exist two implementations - one with
                     hiding an image inside of another, the other involves hiding plain text inside of an image. So how
@@ -101,6 +93,15 @@
                     technique is quite easy to understand and so is its implementation.
 
                 </p>
+
+                <div class="rside-image">
+                    <figure class="figure">
+                        <img src="../../images/steg/bit representation.png" class="figure-img img-fluid rounded"
+                            alt="Fig. 1: 8-bit representation of an integer.">
+                        <figcaption class="figure-caption">Fig. 1: 8-bit representation of an integer </figcaption>
+                    </figure>
+                </div>
+
                 <p class="text-content">
                     Every pixel in an image is composed of three
                     primary colours, and the intensity of each of the
@@ -175,7 +176,7 @@
 
                 <div class="center-image">
                     <figure class="figure">
-                        <img src="./images/steg/process.png" class="figure-img img-fluid rounded"
+                        <img src="../../images/steg/process.png" class="figure-img img-fluid rounded"
                             alt="Fig. 2: Process of pixel modifications for LSB technique">
                         <figcaption class="figure-caption">Fig. 2: Process of pixel modifications for LSB technique.
                         </figcaption>
@@ -249,7 +250,7 @@
 
                 <div class="center-image">
                     <figure class="figure">
-                        <img src="./images/steg/extraction.png" class="figure-img img-fluid rounded" alt="Fig. 3: Process of pixel modifications for extraction of
+                        <img src="../../images/steg/extraction.png" class="figure-img img-fluid rounded" alt="Fig. 3: Process of pixel modifications for extraction of
                             'message' and 'foreground' images.">
                         <figcaption class="figure-caption">Fig. 3: Process of pixel modifications for extraction of
                             <em>'message'</em> and <em>'foreground'</em> images.
@@ -271,7 +272,7 @@
 
                 <p class="text-content">
                     For example, as visualized above, let out_red = 71d, divider = 2^4 = 16, then using the above
-                    equation to find or:
+                    equation to find msg_red:
                 </p>
 
                 <p class="text-content-center"><b>msg_red = (71 % 16) * 16</b></p>
@@ -286,6 +287,11 @@
                 <p class="text-content">
                     Also to note that the number of bits we use to replace also determines the quality of the
                     output image. If we use lesser number of bits to be replaced we get different results.
+                </p>
+
+                <p class="text-content">
+                    You can get an encrypted image with an image hidden inside of it <a href="#"
+                        target="_blank">here</a>.
                 </p>
                 <br>
 
@@ -343,7 +349,14 @@
 
                 <br>
                 <p class="text-content">
-                    You can find the implementation in MATLAB <a href="https://github.com/prithviie/steganography.git" target="_blank">here</a> .
+                    You can find the implementation in MATLAB <a href="https://github.com/prithviie/steganography.git"
+                        target="_blank">here</a>.
+                </p>
+
+
+
+                <p class="text-content">
+                    <a href="#top">Go to top</a>
                 </p>
 
 
@@ -377,6 +390,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    <script src="js/stegano.js"></script>
 </body>
 
 </html>

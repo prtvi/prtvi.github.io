@@ -1,4 +1,7 @@
 /* main -- in all */
+html{
+  scroll-behavior: smooth;
+}
 body {
   background-color: #f8f8ff;
 }
