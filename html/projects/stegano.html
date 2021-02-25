@@ -11,6 +11,7 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="icon" href="../../images/icons/keyboard.ico" type="image/icon type">
 
     <title>Projects · Steganography</title>
 </head>
@@ -75,6 +76,7 @@
                     video or maybe an audio file. This done to avoid suspicion, as using an ordinary file does not
                     attract attention.
                 </p>
+
                 <p class="text-content">
                     Steganography can be used to conceal any forms of digital data – image/text/audio/video. And not
                     just that, any form of digital data can be concealed in any form of digital data. In modern
@@ -87,8 +89,10 @@
                     hiding an image inside of another, the other involves hiding plain text inside of an image. So how
                     exactly do you think this process works?
                 </p>
+
                 <p class="text-content">
-                    The idea of steganography for this project is achieved with the LSB technique - by pixel value
+                    The idea of steganography for this project is achieved with the <b>LSB</b> (Least Significance Bit)
+                    technique - by pixel value
                     modifications, although there are different and much better/efficient ways to do this, but LSB
                     technique is quite easy to understand and so is its implementation.
 
@@ -116,13 +120,14 @@
                     represented in binary as an 8-bit binary number – red (0001_1000), green (1100_1000)
                     and blue (0111_1000). Here each representation in binary is split into MSBs and LSBs
                     using an underscore. Refer Fig. 1.
-
                 </p>
+
                 <p class="text-content">
                     As the value of any number depends on its most significant digit, therefore altering the
                     least significant digit would not change its value by any significant amount. We use this
                     concept to implement steganography.
                 </p>
+
                 <p class="text-content">
                     Now let us look at how each of the processes of steganography work.
                 </p>
@@ -144,7 +149,6 @@
 
                 <br>
                 <h5>1.1 Process</h5>
-
 
                 <p class="text-content">
                     For this process, <em>'output'</em> is produced from the given two input images.
@@ -197,21 +201,26 @@
                     The mathematical calculation performed on each pixel to achieve this replacement is as
                     follows:
                 </p>
+
                 <p class="text-content-center"><b>out_red = floor(fore_red / divider) * divider + floor(msg_red /
                         divider)</b></p>
                 <p class="text-content">where, divider = 2 ^ (number of bits to replace)</p>
+
                 <p class="text-content">
                     This is performed without converting the pixel values into binary, rather it is performed
                     on decimal values itself.
                 </p>
+
                 <p class="text-content">
                     For example, as visualized above, let fore_red = 72d, msg_red = 127d, divider = 2^4 = 16, then using
                     the above equation to find out_red:
                 </p>
+
                 <p class="text-content-center"><b>out_red = floor(72 / 16) * 16 + floor(127 / 16)</b></p>
                 <p class="text-content-center"><b>= 4 * 16 + 7</b></p>
                 <p class="text-content-center"><b>out_red = 71d</b></p>
                 <br>
+
                 <h5>1.1 Extraction</h5>
 
                 <p class="text-content">
@@ -264,8 +273,8 @@
                     only the message image, therefore the pixel value for the message is given by:
 
                 </p>
-                <p class="text-content-center"><b>msg_red = (out_red % divider) * divider</b></p>
 
+                <p class="text-content-center"><b>msg_red = (out_red % divider) * divider</b></p>
                 <p class="text-content">
                     where, divider = 2 ^ (number of bits to replace)
                 </p>
@@ -284,6 +293,7 @@
                     differ by large amount, this happens for every colour in every pixel and so it becomes
                     negligible on a large scale.
                 </p>
+
                 <p class="text-content">
                     Also to note that the number of bits we use to replace also determines the quality of the
                     output image. If we use lesser number of bits to be replaced we get different results.
@@ -306,59 +316,107 @@
                     text is not displayed.
                 </p>
                 <br>
+
                 <h5>2.1 Process</h5>
 
                 <p class="text-content">
                     To be able to hide plain text data into an image, we will first need to know how many
-                    LSB bits from the pixels we will be replacing in the image. For this implementation just 1-bit is
-                    used for every pixel color value in the image.
+                    LSB bits from the pixels values we will be replacing. For this implementation just 1-bit is
+                    used for every pixel. So the basic idea is to choose a set of pixels in an image, replace their last
+                    bit using the binary representation of the text. The process is as shown in Fig. 4.
                 </p>
+
+                <div class="center-image">
+                    <figure class="figure">
+                        <img src="../../images/steg/bit-replacement-precedure.png" class="figure-img img-fluid rounded"
+                            alt="Fig. 4: Process of replacement of LSB in the pixel value.">
+                        <figcaption class="figure-caption">Fig. 4: Process of replacement of LSB in the pixel value.
+                        </figcaption>
+                    </figure>
+                </div>
+
                 <p class="text-content">
                     To replace the bits into the image, first we will have to convert the text into binary
                     representation as well. We achieve this by converting every character from the text to its
                     corresponding <a href="https://www.w3schools.com/charsets/ref_html_ascii.asp"
                         target="_blank">ASCII</a> value (which is an integer). Further converting this integer value
                     into binary representation will give us the binary representation of each character from
-                    the text.
+                    the text. Using the binary representation of each of the character we append a special
+                    character/identifier which will be useful during extraction process. After that's done, we produce a
+                    continuous <em>stream of bits</em>
+                    which will be replaced in the pixels.
                 </p>
+
+                <div class="center-image">
+                    <figure class="figure">
+                        <img src="../../images/steg/text2binary.png" class="figure-img img-fluid rounded"
+                            alt="Fig. 5: Process of conversion of text characters into binary representation.">
+                        <figcaption class="figure-caption">Fig. 5: Process of conversion of text characters into binary
+                            representation.
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <p class="text-content">
+                    Side note, the replacement can be done in any of the pixels, like for example, if the length
+                    <em>stream of bits</em> is
+                    450,
+                    then the replacement can be done in the first 450 pixels only. This can be done anyway, depending
+                    upon the implementation.
+                    The replacement can be done only in the red pixels or blue, or all three of them.
+                </p>
+
+                <p class="text-content">
+                    In this implementation, as we loop around individual pixels, at every iteration the sum of the
+                    indexes suppose <em>i</em> and <em>j</em>, <em>sum = i + j</em>
+                    is calculated, depending upon the divisibility of <em>sum</em> by 3, the pixel is either chosen as
+                    red, green or blue and replacement is done at the particular index of the image – <em> (i, j)
+                        th</em>
+                    position/index.
+                </p>
+
                 <p class="text-content">
                     As we have seen that every color in a pixel has an 8-bit representation, we will extract the
-                    binary representation of the characters from the text in 8-bit representation as well. Doing
+                    binary representation of the characters from the text in 8-bit representation as well. As shown in
+                    Fig. 5. Doing
                     this also helps ease the extraction process.
                 </p>
+
                 <p class="text-content">
-                    During the process of steganography, we produce a continuous stream of bits from the
-                    text; this stream of bits is then used to replace the last LSB in the image pixel. For every
-                    required pixel in the image, the last bit of that pixel is replaced by the bit from the stream
-                    of bits. We also use a special identifier at the end of the text so as to know when to stop
-                    the replacement. The output is the image with the pixel values modified.
+                    So during the process, we produce a continuous stream of bits from the
+                    text Fig. 5; this stream of bits is then used to replace the last LSB in the corresponding pixels.
+                    For every
+                    required pixel in the image, the last bit of that pixel is replaced by an individual bit from the
+                    <em>stream
+                        of bits</em>.
+                    The output is the image with the pixel values modified.
                 </p>
                 <br>
+
                 <h5>2.2 Extraction</h5>
 
                 <p class="text-content">
                     During the extraction process (with the encrypted image as input), we select the
                     appropriate pixels where the replacement was originally done. Then for these pixels, the
-                    last bit is extracted and again a stream of bits is produced. Using this stream of bits, every
-                    time 8-bits from the stream are selected and converted to integer and then converted to
-                    character (reverse of what we had done during steganography). Every character produced
+                    last bit is extracted and again a <em>stream of bits</em> is produced. Using the <em>stream of
+                        bits</em>, at
+                    every iteration, 8-bits from <em>stream of bits</em> are selected and converted to integer and then
+                    converted to
+                    character (reverse of what we had done during encryption). Every character produced
                     is appended to the final text. Also each character is compared to the special identifier so
                     as to stop the process as soon as the special identifier is found. The output is the hidden
                     text extracted from the image.
                 </p>
 
-                <br>
                 <p class="text-content">
-                    You can find the implementation in MATLAB <a href="https://github.com/prithviie/steganography.git"
+                    You can get an encrypted image with some hidden text inside of it <a href="#"
+                        target="_blank">here</a>. You can find the entire implementation in MATLAB <a href="https://github.com/prithviie/steganography.git"
                         target="_blank">here</a>.
                 </p>
-
-
 
                 <p class="text-content">
                     <a href="#top">Go to top</a>
                 </p>
-
 
             </div>
         </div>
