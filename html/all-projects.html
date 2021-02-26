@@ -19,7 +19,6 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <!-- <a class="navbar-brand" href="#">Container</a> -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07"
                 aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -49,8 +48,22 @@
                     </li>
                 </ul>
             </div>
+            <!-- to show what page the user is at when screen is small -->
+            <a class="navbar-brand" id="at-smaller-screen" href="#">
+                All projects
+            </a>
         </div>
     </nav>
+
+<!-- breadcrumb for navigation -->
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">All projects</li>
+            </ol>
+        </nav>
+    </div>
 
     <br>
     <div class="container">
