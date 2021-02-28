@@ -32,12 +32,9 @@
                     <li class="nav-item active">
                         <a class="nav-link" href=".././all-projects.html">Projects</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Music</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li> -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">Interactive Pages</a>
@@ -48,7 +45,7 @@
                             <a class="dropdown-item" href="#">Tic-Tac-Toe</a>
                             <a class="dropdown-item" href="#">Snake</a>
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <!-- to show what page the user is at when screen is small -->
@@ -75,7 +72,9 @@
             <h1><em>Steganography</em></h1>
 
             <div class="container">
-                <small class="text-muted"><em>by Prithviraj Vernekar</em></small>
+                <small class="text-muted"><em>by Prithviraj Vernekar · <a
+                            href="https://github.com/prithviie/steganography.git" target="_blank">Source
+                            code</a></em></small>
             </div>
 
             <div class="container">
@@ -114,7 +113,7 @@
 
                 <div class="rside-image">
                     <figure class="figure">
-                        <img src="../../images/steg/bit representation.png" class="figure-img img-fluid rounded"
+                        <img src="../../images/projects/steg/bit representation.png" class="figure-img img-fluid rounded"
                             alt="Fig. 1: 8-bit representation of an integer.">
                         <figcaption class="figure-caption">Fig. 1: 8-bit representation of an integer </figcaption>
                     </figure>
@@ -200,7 +199,7 @@
 
                 <div class="center-image">
                     <figure class="figure">
-                        <img src="../../images/steg/process.png" class="figure-img img-fluid rounded"
+                        <img src="../../images/projects/steg/process.png" class="figure-img img-fluid rounded"
                             alt="Fig. 2: Process of pixel modifications for LSB technique">
                         <figcaption class="figure-caption">Fig. 2: Process of pixel modifications for LSB technique.
                         </figcaption>
@@ -286,7 +285,7 @@
 
                 <div class="center-image">
                     <figure class="figure">
-                        <img src="../../images/steg/extraction.png" class="figure-img img-fluid rounded" alt="Fig. 3: Process of pixel modifications for extraction of
+                        <img src="../../images/projects/steg/extraction.png" class="figure-img img-fluid rounded" alt="Fig. 3: Process of pixel modifications for extraction of
                             'message' and 'foreground' images.">
                         <figcaption class="figure-caption">Fig. 3: Process of pixel modifications for extraction of
                             <em>'message'</em> and <em>'foreground'</em> images.
@@ -326,10 +325,10 @@
                     output image. If we use lesser number of bits to be replaced we get different results.
                 </p>
 
-                <p class="text-content">
+                <!-- <p class="text-content">
                     You can get an encrypted image with an image hidden inside of it <a href="#"
                         target="_blank">here</a>.
-                </p>
+                </p> -->
                 <br>
 
                 <h4>2. Txt2img - to hide plain text inside an image</h4>
@@ -356,7 +355,7 @@
 
                 <div class="center-image">
                     <figure class="figure">
-                        <img src="../../images/steg/bit-replacement-precedure.png" class="figure-img img-fluid rounded"
+                        <img src="../../images/projects/steg/bit-replacement-precedure.png" class="figure-img img-fluid rounded"
                             alt="Fig. 4: Process of replacement of LSB in the pixel value.">
                         <figcaption class="figure-caption">Fig. 4: Process of replacement of LSB in the pixel value.
                         </figcaption>
@@ -378,7 +377,7 @@
 
                 <div class="center-image">
                     <figure class="figure">
-                        <img src="../../images/steg/text2binary.png" class="figure-img img-fluid rounded"
+                        <img src="../../images/projects/steg/text2binary.png" class="figure-img img-fluid rounded"
                             alt="Fig. 5: Process of conversion of text characters into binary representation.">
                         <figcaption class="figure-caption">Fig. 5: Process of conversion of text characters into
                             binary
@@ -445,8 +444,9 @@
                 </p>
 
                 <p class="text-content">
-                    You can get an encrypted image with some hidden text inside of it <a href="#"
-                        target="_blank">here</a>. You can find the entire implementation in MATLAB <a
+                    <!-- You can get an encrypted image with some hidden text inside of it <a href="#"
+                        target="_blank">here</a>.  -->
+                    You can find the entire implementation in MATLAB <a
                         href="https://github.com/prithviie/steganography.git" target="_blank">here</a>.
                 </p>
 
@@ -458,19 +458,21 @@
         </div>
     </div>
 
-    <footer class="footer mt-auto py-3">
-        <div class="container">
-            <span class="text-muted">
-                <p id="footer-text">
-                    <a href="https://github.com/prithviie" target="_blank">Github</a> |
-                    <a href="mailto:prithvi78900@gmail.com" target="_blank">Email</a>
-                </p>
-                <small class="text-muted">
-                    In progress..
-                </small>
-            </span>
-        </div>
-    </footer>
+    <div class="container">
+        <footer class="footer mt-auto py-3">
+            <div class="container">
+                <span class="text-muted">
+                    <p id="footer-text">
+                        <a href="https://github.com/prithviie" target="_blank">Github</a> |
+                        <a href="mailto:prithvi78900@gmail.com" target="_blank">Email</a>
+                    </p>
+                    <small class="text-muted">
+                        In progress..
+                    </small>
+                </span>
+            </div>
+        </footer>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -483,7 +485,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    <!-- <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script> -->
     <!-- <script src="js/stegano.js"></script> -->
 </body>
 
