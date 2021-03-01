@@ -76,3 +76,11 @@ body {
   }
 }
 /* for all projects  */
+
+/* for canvases - for interactive pages */
+canvas{
+  background-color: #f8f8ff;
+  width: 50%;
+  margin-left: 3%; 
+}
+/* for canvases - for interactive pages */

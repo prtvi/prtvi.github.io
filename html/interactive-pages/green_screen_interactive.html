@@ -11,9 +11,9 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../../css/style.css">
-    <link rel="icon" href="../../images/icons/keyboard.ico" type="image/icon type">
+    <link rel="icon" href="../../images/icons/asterisk.ico" type="image/icon type">
 
-    <title>Projects · Password Manager</title>
+    <title>Projects · Green Screen – Interactive</title>
 </head>
 
 <body>
@@ -39,8 +39,8 @@
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">Interactive Pages</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown07">
-                            <a class="dropdown-item" href="../interactive-pages/stegano_interactive.html">Steganography</a>
-                            <a class="dropdown-item" href="../interactive-pages/green_screen_interactive.html">Green Screen</a>
+                            <a class="dropdown-item" href="./stegano_interactive.html">Steganography</a>
+                            <a class="dropdown-item" href="#">Green Screen</a>
                             <!-- <a class="dropdown-item" href="#">Bubble pop</a>
                             <a class="dropdown-item" href="#">Tic-Tac-Toe</a>
                             <a class="dropdown-item" href="#">Snake</a> -->
@@ -50,7 +50,7 @@
             </div>
             <!-- to show what page the user is at when screen is small -->
             <a class="navbar-brand" id="at-smaller-screen" href="#">
-                Password Manager
+                Green Screen – DIY
             </a>
         </div>
     </nav>
@@ -59,8 +59,8 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
-                <li class="breadcrumb-item"><a href="../all-projects.html">Projects</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Password Manager</li>
+                <li class="breadcrumb-item active" aria-current="page">Interactive Pages</li>
+                <li class="breadcrumb-item active" aria-current="page">Green Screen - DIY</li>
             </ol>
         </nav>
     </div>
@@ -69,54 +69,33 @@
     <div class="container">
         <div class="container">
             <br>
-            <h1><em>Password Manager</em></h1>
-
-            <div class="container">
-                <small class="text-muted"><a href="https://github.com/prithviie/password-mngr-cpp-py.git"
-                        target="_blank">Get source code</a>
-                </small>
-            </div>
+            <h1><em>Green Screen – DIY</em></h1>
             <br>
 
             <div class="container">
-
-                <p class="text-content">
-                    Do you have too many passwords and can't remember them? Well a password manager
-                    can help you with that. Using an SQL database, you can build a simple password manager. I
-                    implemented a simple Password Manager in C++ as well as in Python which uses a database to store
-                    the passwords. The application provides various options for the user to add/remove data.
+                <p>
+                    If you want to try out the Green Screen algorithm, you can try it out here. Make sure the image have
+                    the same dimensions.
                 </p>
-                <p class="text-content">
-                    The advantage of using a database over a text file is that updation, deletion and retrieval is very
-                    quick and easy.
-                </p>
+                <br>
 
-                <p class="text-content">
-                    Some snapshots of the application:
-                </p>
+                <p>Upload an image with an object over green background (foreground image): <input class="" type="file"
+                        multiple="false" accept="image/*" onchange="upload('fgfile')" id="fgfile"></p>
 
-                <div class="center-image">
-                    <figure class="figure">
-                        <img src="../../images/projects/pwmngr/master-set.png" class="figure-img img-fluid rounded"
-                            alt="Fig. 1: First view after setting the Master password.">
-                        <figcaption class="figure-caption">Fig. 1: First view after setting the Master password.
-                        </figcaption>
-                    </figure>
-                </div>
+                <p>Upload a background image: <input class="" type="file" multiple="false" accept="image/*"
+                        onchange="upload('bgfile')" id="bgfile"></p>
 
-                <div class="center-image">
-                    <figure class="figure">
-                        <img src="../../images/projects/pwmngr/adding-data.png" class="figure-img img-fluid rounded"
-                            alt="Fig. 2: Adding of data.">
-                        <figcaption class="figure-caption">Fig. 2: Adding of data.
-                        </figcaption>
-                    </figure>
-                </div>
+                <br>
+                <p><input class="btn btn-primary" type="button" value="Create composite" onclick="show()"></p>
+
+                <canvas id="canv">
+                </canvas>
 
             </div>
         </div>
     </div>
 
+    <br>
     <div class="container">
         <footer class="footer mt-auto py-3">
             <div class="container">
@@ -133,7 +112,6 @@
         </footer>
     </div>
 
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -145,7 +123,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    <script src="../../js/green.js"></script>
 </body>
 
 </html>

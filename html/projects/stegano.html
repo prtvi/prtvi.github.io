@@ -34,18 +34,20 @@
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Music</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">Interactive Pages</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown07">
-                            <a class="dropdown-item" href="#">Green Screen</a>
-                            <a class="dropdown-item" href="#">Steganography</a>
-                            <a class="dropdown-item" href="#">Bubble pop</a>
+                            <a class="dropdown-item"
+                                href="../interactive-pages/stegano_interactive.html">Steganography</a>
+                            <a class="dropdown-item" href="../interactive-pages/green_screen_interactive.html">Green
+                                Screen</a>
+                            <!-- <a class="dropdown-item" href="#">Bubble pop</a>
                             <a class="dropdown-item" href="#">Tic-Tac-Toe</a>
-                            <a class="dropdown-item" href="#">Snake</a>
+                            <a class="dropdown-item" href="#">Snake</a> -->
                         </div>
-                    </li> -->
+                    </li>
                 </ul>
             </div>
             <!-- to show what page the user is at when screen is small -->
@@ -91,8 +93,7 @@
                     Steganography can be used to conceal any forms of digital data – image/text/audio/video. And not
                     just that, any form of digital data can be concealed in any form of digital data. In modern
                     practices, often the data to be hidden is first encrypted in some form and then concealed inside
-                    of
-                    media files. This adds a layer of security to the data.
+                    of media files. This adds a layer of security to the data.
                 </p>
 
                 <p class="text-content">
@@ -108,13 +109,12 @@
                     technique - by pixel value
                     modifications, although there are different and much better/efficient ways to do this, but LSB
                     technique is quite easy to understand and so is its implementation.
-
                 </p>
 
                 <div class="rside-image">
                     <figure class="figure">
-                        <img src="../../images/projects/steg/bit representation.png" class="figure-img img-fluid rounded"
-                            alt="Fig. 1: 8-bit representation of an integer.">
+                        <img src="../../images/projects/steg/bit representation.png"
+                            class="figure-img img-fluid rounded" alt="Fig. 1: 8-bit representation of an integer.">
                         <figcaption class="figure-caption">Fig. 1: 8-bit representation of an integer </figcaption>
                     </figure>
                 </div>
@@ -123,8 +123,7 @@
                     Every pixel in an image is composed of three
                     primary colours, and the intensity of each of the
                     three primary colours determines the colour of the pixel. Every colour in a pixel is represented
-                    as
-                    an integer in the range 0 – 255. Therefore every colour can be represented as 8-bit binary
+                    as an integer in the range 0 – 255. Therefore every colour can be represented as 8-bit binary
                     number.
                 </p>
 
@@ -297,7 +296,6 @@
                     Again the base is 2, therefore <b>divider = 2^4 = 16</b>, the mathematical calculation performed
                     on each pixel to achieve this process is as follows, suppose we are interested in extracting
                     only the message image, therefore the pixel value for the message is given by:
-
                 </p>
 
                 <p class="text-content-center"><b>msg_red = (out_red % divider) * divider</b></p>
@@ -325,10 +323,10 @@
                     output image. If we use lesser number of bits to be replaced we get different results.
                 </p>
 
-                <!-- <p class="text-content">
-                    You can get an encrypted image with an image hidden inside of it <a href="#"
-                        target="_blank">here</a>.
-                </p> -->
+                <p class="text-content">
+                    You can get an encrypted image with an image hidden inside of it <a
+                        href="../interactive-pages/stegano_interactive.html">here</a>.
+                </p>
                 <br>
 
                 <h4>2. Txt2img - to hide plain text inside an image</h4>
@@ -355,7 +353,8 @@
 
                 <div class="center-image">
                     <figure class="figure">
-                        <img src="../../images/projects/steg/bit-replacement-precedure.png" class="figure-img img-fluid rounded"
+                        <img src="../../images/projects/steg/bit-replacement-precedure.png"
+                            class="figure-img img-fluid rounded"
                             alt="Fig. 4: Process of replacement of LSB in the pixel value.">
                         <figcaption class="figure-caption">Fig. 4: Process of replacement of LSB in the pixel value.
                         </figcaption>
@@ -370,8 +369,7 @@
                     into binary representation will give us the binary representation of each character from
                     the text. Using the binary representation of each of the character we append a special
                     character/identifier which will be useful during extraction process. After that's done, we
-                    produce a
-                    continuous <em>stream of bits</em>
+                    produce a continuous <em>stream of bits</em>
                     which will be replaced in the pixels.
                 </p>
 
@@ -388,41 +386,31 @@
 
                 <p class="text-content">
                     Side note, the replacement can be done in any of the pixels, like for example, if the length
-                    <em>stream of bits</em> is
-                    450,
-                    then the replacement can be done in the first 450 pixels only. This can be done anyway,
-                    depending
-                    upon the implementation.
-                    The replacement can be done only in the red pixels or blue, or all three of them.
+                    <em>stream of bits</em> is 450, then the replacement can be done in the first 450 pixels only. This
+                    can be done anyway, depending upon the implementation. The replacement can be done only in the red
+                    pixels or blue, or all three of them.
                 </p>
 
                 <p class="text-content">
                     In this implementation, as we loop around individual pixels, at every iteration the sum of the
                     indexes suppose <em>i</em> and <em>j</em>, <em>sum = i + j</em>
                     is calculated, depending upon the divisibility of <em>sum</em> by 3, the pixel is either chosen
-                    as
-                    red, green or blue and replacement is done at the particular index of the image – <em> (i, j)
-                        th</em>
+                    as red, green or blue and replacement is done at the particular index of the image – <em> (i,
+                        j)th</em>
                     position/index.
                 </p>
 
                 <p class="text-content">
                     As we have seen that every color in a pixel has an 8-bit representation, we will extract the
                     binary representation of the characters from the text in 8-bit representation as well. As shown
-                    in
-                    Fig. 5. Doing
-                    this also helps ease the extraction process.
+                    in Fig. 5. Doing this also helps ease the extraction process.
                 </p>
 
                 <p class="text-content">
                     So during the process, we produce a continuous stream of bits from the
                     text Fig. 5; this stream of bits is then used to replace the last LSB in the corresponding
-                    pixels.
-                    For every
-                    required pixel in the image, the last bit of that pixel is replaced by an individual bit from
-                    the
-                    <em>stream
-                        of bits</em>.
+                    pixels. For every required pixel in the image, the last bit of that pixel is replaced by an
+                    individual bit from the <em>stream of bits</em>.
                     The output is the image with the pixel values modified.
                 </p>
                 <br>
@@ -485,8 +473,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-    <!-- <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script> -->
-    <!-- <script src="js/stegano.js"></script> -->
 </body>
 
 </html>
