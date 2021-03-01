@@ -73,8 +73,8 @@
 
             <div class="container">
                 <small class="text-muted"><em>by Prithviraj Vernekar ·
-                        <!-- <a href="#" target="_blank">Source
-                            code</a> -->
+                        <a href="https://github.com/prithviie/green-screen.git" target="_blank">Source
+                            code</a>
                     </em></small>
             </div>
 
@@ -96,30 +96,116 @@
                 <div class="rside-image">
                     <figure class="figure">
                         <img src="../../images/projects/greenscreen/fg.png" class="figure-img img-fluid rounded"
-                            alt="Fig. 1: Object over a green screen.">
-                        <figcaption class="figure-caption">Fig. 1: Object over a green screen.</figcaption>
+                            alt="Fig. 1: Object over a green screen (foreground_image).">
+                        <figcaption class="figure-caption">Fig. 1: Object over a green screen
+                            (<em>foreground_image</em>).</figcaption>
                     </figure>
                 </div>
 
                 <p class="text-content">
                     As with video rendering, we usually see a person or object infront of a green screen and the video
                     rendering happens at the computer. But so as to work with images, we will first need an
-                    image with an object placed over a green coloured background. Fig. 1.
+                    image with an object placed over a green coloured background. See Fig. 1.
                 </p>
 
                 <p class="text-content">
-                    
+                    Once we have an object which will be replaced over a background image of our choice, we will need to
+                    look at some constraints before we begin with the algorithm. The algorithm runs in way such that at
+                    every iteration (while looping through the pixels of the image), it iterates through the pixels of
+                    both the
+                    images – the background as well as the image with the object over the green background. So it is
+                    required that the dimensions of both the images match. Let the background image be
+                    <em>'bg_image'</em> and the image with the object over the green background be
+                    <em>'foreground_image'</em>.
                 </p>
 
+                <p class="text-content">
+                    Once we choose the <em>'bg_image'</em>, we can begin with algorithm.
+                </p>
+
+                <p class="text-content">
+                    Let us say we want to save the new image in <em>'output'</em>. As we begin with the iteration
+                    through the <em>'foreground_image'</em> and <em>'bg_image'</em>, we check the value of the pixel in
+                    <em>'foreground_image'</em>, if the value of the current pixel is greater than or equal to certain
+                    threshold (say 235), we select the pixel from the <em>'bg_image'</em> and put it into
+                    <em>'output'</em>, (<em><b>b2</b></em> – refer Fig. 2) else
+                    we select the pixel from the <em>'foreground_image'</em> and put it into <em>'output'</em>
+                    (<em><b>f1</b></em> – refer Fig. 2). The
+                    visual representation of the process is shown in Fig. 2.
+                </p>
+
+                <div class="center-image">
+                    <figure class="figure">
+                        <img src="../../images/projects/greenscreen/process-per-pixel.png"
+                            class="figure-img img-fluid rounded"
+                            alt="Fig. 2: Choosing of pixel according to the pixel value in foreground_image">
+                        <figcaption class="figure-caption">Fig. 2: Choosing of pixel according to the pixel value in
+                            <em>foreground_image</em>.
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="rside-image">
+                    <figure class="figure">
+                        <img src="../../images/projects/greenscreen/final-output.png"
+                            class="figure-img img-fluid rounded"
+                            alt="Fig. 3: The algorithm applied over a group of pixels.">
+                        <figcaption class="figure-caption">Fig. 3: The algorithm applied over a group of pixels.
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <p class="text-content">
+                    If you consider a group of pixels from <em>'foreground_image'</em> as well as <em>'bg_image'</em>,
+                    the pixel replacement into <em>'output'</em> is done as shown in Fig. 3.
+                </p>
+
+                <p class="text-content">
+                    So if you run the algorithm with Fig. 1 with a background image, you can achieve an appreciable
+                    output
+                    image with the tiger placed over the background. Though it might seem not good enough to fit into
+                    such background, but adjusting the light exposure to the images can produce much better results.
+                    This implementation is done just to learn and visualize the working of the algorithm. Well there are
+                    much better and efficient ways to do this.
+                </p>
+
+                <p class="text-content">
+                    As with video, the studios where such recordings are done, they are basically well lit and mostly
+                    have adjusted lights to make it look good. If this is done with better tools and a well lit
+                    environment, then
+                    the results can be un-noticeable.
+                </p>
+
+                <p class="text-content">
+                    Running the implemented code over the Fig. 1 after adjusting the dimensions, we get the result as
+                    shown below, Fig. 4.
+                </p>
+
+                <div class="center-image">
+                    <figure class="figure">
+                        <img src="../../images/projects/greenscreen/output.png" class="figure-img img-fluid rounded"
+                            alt="Fig. 4: Running the implemented code on Fig. 1 with a background image">
+                        <figcaption class="figure-caption">Fig. 4: Running the implemented code on Fig. 1 with a
+                            background image
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <p class="text-content">
+                    <!-- You can try out the process <a href="#"
+                        target="_blank">here</a>.  -->
+                    You can find the implementation <a href="https://github.com/prithviie/green-screen.git"
+                        target="_blank">here</a>.
+                </p>
+
+                <p class="text-content">
+                    <a href="#top">Go to top</a>
+                </p>
 
             </div>
         </div>
     </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
     <br>
     <div class="container">
         <footer class="footer mt-auto py-3">

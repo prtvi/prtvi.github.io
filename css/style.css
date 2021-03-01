@@ -38,47 +38,41 @@ body {
     visibility: visible;
   }
 }
+/* to show what page the user is at when screen is small */
+
 /* main -- in all */
 
-/* stegano.html */
+/* for all projects  */
 @media (min-width: 1000px) {
   .text-content {
-    /* steg page for text */
     width: 60%;
   }
   .text-content-center {
-    /* steg page for text for bold texts for values */
+    /* for text with bold texts for formulae */
     width: 60%;
     text-align: center;
   }
   .rside-image {
-    /* for steg page for right side images */
     display: inline;
     width: 35%;
     float: right;
     text-align: center;
   }
   .center-image {
-    /* steg page for center image */
     width: 45%;
-    clear: both;
     text-align: center;
     margin-left: 7%;
   }
 }
 @media (max-width: 880px) {
   .text-content-center {
-    /* steg page for text for bold texts for values */
     text-align: center;
   }
   .center-image {
-    /* steg page for center image */
-    clear: both;
     text-align: center;
   }
   .rside-image {
-    /* for steg page for right side images */
     text-align: center;
   }
 }
-/* stegano.html */
+/* for all projects  */
