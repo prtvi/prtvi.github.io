@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="icon" href="../../images/icons/asterisk.ico" type="image/icon type">
 
-    <title>Green Screen · Interactive</title>
+    <title>Bubble Sort Visualization</title>
 </head>
 
 <body>
@@ -40,9 +40,9 @@
                             aria-haspopup="true" aria-expanded="false">Interactive Pages</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown07">
                             <a class="dropdown-item" href="./stegano_interactive.html">Steganography</a>
-                            <a class="dropdown-item" href="#">Green Screen</a>
+                            <a class="dropdown-item" href="./green_screen_interactive.html">Green Screen</a>
                             <a class="dropdown-item" href="./tictactoe.html">Tic-Tac-Toe</a>
-                            <a class="dropdown-item" href="./bubble_sort_vis.html">Bubble Sort Visualization</a>
+                            <a class="dropdown-item" href="#">Bubble Sort Visualization</a>
                             <!-- <a class="dropdown-item" href="#">Snake</a> -->
                         </div>
                     </li>
@@ -50,7 +50,7 @@
             </div>
             <!-- to show what page the user is at when screen is small -->
             <a class="navbar-brand" id="at-smaller-screen" href="#">
-                Green Screen – DIY
+                Bubble Sort Visualization
             </a>
         </div>
     </nav>
@@ -60,7 +60,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Interactive Pages</li>
-                <li class="breadcrumb-item active" aria-current="page">Green Screen - DIY</li>
+                <li class="breadcrumb-item active" aria-current="page">Bubble Sort Visualization</li>
             </ol>
         </nav>
     </div>
@@ -69,47 +69,19 @@
     <div class="container">
         <div class="container">
             <br>
-            <h1><em>Green Screen – DIY</em></h1>
+            <h1>Bubble Sort Visualization</h1>
             <br>
-
             <div class="container">
-                <p>
-                    If you want to try out the Green Screen algorithm, you can try it out here. Make sure the image have
-                    the same dimensions.
+                <p class="text-content">
+                    Click to start.
                 </p>
-                <br>
 
-                <p>Upload an image with an object over green background (foreground image): <input class="" type="file"
-                        multiple="false" accept="image/*" onchange="upload('fgfile')" id="fgfile"></p>
-
-                <p>Upload a background image: <input class="" type="file" multiple="false" accept="image/*"
-                        onchange="upload('bgfile')" id="bgfile"></p>
-
-                <br>
-                <p><input class="btn btn-primary" type="button" value="Create composite" onclick="show()"></p>
-
-                <canvas id="canv">
-                </canvas>
+                <!-- <label for="customRange3" class="form-label">Example range</label> -->
+                <!-- <input type="range" class="form-range" min="0" max="10" step="1" id="range"> -->
 
             </div>
+
         </div>
-    </div>
-
-    <br>
-    <div class="container">
-        <footer class="footer mt-auto py-3">
-            <div class="container">
-                <span class="text-muted">
-                    <p id="footer-text">
-                        <a href="https://github.com/prithviie" target="_blank">Github</a> |
-                        <a href="mailto:prithvi78900@gmail.com" target="_blank">Email</a>
-                    </p>
-                    <small class="text-muted">
-                        In progress..
-                    </small>
-                </span>
-            </div>
-        </footer>
     </div>
 
     <!-- Optional JavaScript -->
@@ -123,8 +95,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
-    <script src="../../js/green.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.min.js"></script>
+    <script src="../../js/bubble_sort_vis.js"></script>
 </body>
 
 </html>
