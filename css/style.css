@@ -83,4 +83,8 @@ canvas{
   width: 50%;
   margin-left: 3%; 
 }
+.p5Canvas{
+  width: 40%;
+  margin-left: 14%;
+}
 /* for canvases - for interactive pages */

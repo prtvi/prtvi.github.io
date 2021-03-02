@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="icon" href="../../images/icons/asterisk.ico" type="image/icon type">
 
-    <title>Steganography · Interactive</title>
+
+    <title>Tic-Tac-Toe</title>
 </head>
 
 <body>
@@ -39,9 +40,9 @@
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">Interactive Pages</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown07">
-                            <a class="dropdown-item" href="#">Steganography</a>
+                            <a class="dropdown-item" href="./stegano_interactive.html">Steganography</a>
                             <a class="dropdown-item" href="./green_screen_interactive.html">Green Screen</a>
-                            <a class="dropdown-item" href="../interactive-pages/tictactoe.html">Tic-Tac-Toe</a>
+                            <a class="dropdown-item" href="#">Tic-Tac-Toe</a>
                             <!-- <a class="dropdown-item" href="#">Bubble pop</a> -->
                             <!-- <a class="dropdown-item" href="#">Snake</a> -->
                         </div>
@@ -50,7 +51,7 @@
             </div>
             <!-- to show what page the user is at when screen is small -->
             <a class="navbar-brand" id="at-smaller-screen" href="#">
-                Steganography – DIY
+                Tic-Tac-Toe
             </a>
         </div>
     </nav>
@@ -60,7 +61,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Interactive Pages</li>
-                <li class="breadcrumb-item active" aria-current="page">Steganography – DIY</li>
+                <li class="breadcrumb-item active" aria-current="page">Tic-Tac-Toe</li>
             </ol>
         </nav>
     </div>
@@ -69,47 +70,19 @@
     <div class="container">
         <div class="container">
             <br>
-            <h1><em>Steganography – DIY</em></h1>
+            <h1>Tic-Tac-Toe</h1>
             <br>
-
+            <!-- <p><input class="btn btn-primary" type="button" value="Clear board" onclick="clearBoard()" id="clrButton"></p>
+            <br> -->
             <div class="container">
-                <p>
-                    If you want to try out Steganography – hiding an image inside of another, you can try it here. Make
-                    sure the images have the same dimensions.
-                </p>
-                <br>
-
-                <p>Upload message image here (image which will be hidden): <input class="" type="file" multiple="false"
-                        accept="image/*" onchange="upload('msgfile')" id="msgfile"></p>
-
-                <p>Upload cover image here (image into which the message image will be hidden): <input class=""
-                        type="file" multiple="false" accept="image/*" onchange="upload('coverfile')" id="coverfile"></p>
-
-                <br>
-                <p><input class="btn btn-primary" type="button" value="Create composite" onclick="show()"></p>
-
-                <canvas id="canv">
-                </canvas>
-
+                <b>
+                    <h5>
+                        <p class="text-content" id="winner"></p>
+                    </h5>
+                </b>
             </div>
+
         </div>
-    </div>
-
-    <br>
-    <div class="container">
-        <footer class="footer mt-auto py-3">
-            <div class="container">
-                <span class="text-muted">
-                    <p id="footer-text">
-                        <a href="https://github.com/prithviie" target="_blank">Github</a> |
-                        <a href="mailto:prithvi78900@gmail.com" target="_blank">Email</a>
-                    </p>
-                    <small class="text-muted">
-                        In progress..
-                    </small>
-                </span>
-            </div>
-        </footer>
     </div>
 
     <!-- Optional JavaScript -->
@@ -123,8 +96,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
-    <script src="../../js/stegano.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.min.js"></script>
+    <script src="../../js/tictactoe.js"></script>
 </body>
 
 </html>
