@@ -79,11 +79,19 @@
                 </p>
                 <br>
 
-                <p>Upload an image with an object over green background (foreground image): <input class="" type="file"
-                        multiple="false" accept="image/*" onchange="upload('fgfile')" id="fgfile"></p>
+                <form>
+                    <div class="form-group">
+                      <label for="exampleFormControlFile1">Upload an image with an object over green background (foreground image):</label>
+                      <input type="file" class="form-control-file" multiple="false" accept="image/*" onchange="upload('fgfile')" id="fgfile">
+                    </div>
+                </form>
 
-                <p>Upload a background image: <input class="" type="file" multiple="false" accept="image/*"
-                        onchange="upload('bgfile')" id="bgfile"></p>
+                <form>
+                    <div class="form-group">
+                      <label for="exampleFormControlFile1">Upload a background image: </label>
+                      <input type="file" class="form-control-file" multiple="false" accept="image/*" onchange="upload('bgfile')" id="bgfile">
+                    </div>
+                </form>
 
                 <br>
                 <p><input class="btn btn-primary" type="button" value="Create composite" onclick="show()"></p>

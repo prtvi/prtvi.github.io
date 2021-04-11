@@ -79,11 +79,19 @@
                 </p>
                 <br>
 
-                <p>Upload message image here (image which will be hidden): <input class="" type="file" multiple="false"
-                        accept="image/*" onchange="upload('msgfile')" id="msgfile"></p>
+                <form>
+                    <div class="form-group">
+                      <label for="exampleFormControlFile1">Upload message image here (image which will be hidden): </label>
+                      <input type="file" class="form-control-file" multiple="false" accept="image/*" onchange="upload('msgfile')" id="msgfile">
+                    </div>
+                </form>
 
-                <p>Upload cover image here (image into which the message image will be hidden): <input class=""
-                        type="file" multiple="false" accept="image/*" onchange="upload('coverfile')" id="coverfile"></p>
+                <form>
+                    <div class="form-group">
+                      <label for="exampleFormControlFile1">Upload cover image here (image into which the message image will be hidden):  </label>
+                      <input type="file" class="form-control-file" multiple="false" accept="image/*" onchange="upload('coverfile')" id="coverfile">
+                    </div>
+                </form>
 
                 <br>
                 <p><input class="btn btn-primary" type="button" value="Create composite" onclick="show()"></p>
