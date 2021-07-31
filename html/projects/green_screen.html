@@ -1,238 +1,327 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="icon" href="../../images/icons/keyboard.ico" type="image/icon type">
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link
+      rel="icon"
+      href="../../images/icons/keyboard.ico"
+      type="image/icon type"
+    />
 
     <title>Projects · Green Screen Algorithm</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07"
-                aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarsExample07"
+          aria-controls="navbarsExample07"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarsExample07">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href=".././all-projects.html">Projects</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Music</a>
-                    </li> -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Interactive Pages</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown07">
-                            <a class="dropdown-item" href="../interactive-pages/stegano_interactive.html">Steganography</a>
-                            <a class="dropdown-item" href="../interactive-pages/green_screen_interactive.html">Green Screen</a>
-                            <a class="dropdown-item" href="../interactive-pages/tictactoe.html">Tic-Tac-Toe</a>
-                            <a class="dropdown-item" href="../interactive-pages/bubble_sort_vis.html">Bubble Sort Visualization</a>
-                            <!-- <a class="dropdown-item" href="#">Snake</a> -->
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <!-- to show what page the user is at when screen is small -->
-            <a class="navbar-brand" id="at-smaller-screen" href="#">
-                Green Screen Algorithm
-            </a>
+        <div class="collapse navbar-collapse" id="navbarsExample07">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link" href="./all_projects.html">Projects</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdown07"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Interactive Pages</a
+              >
+              <div class="dropdown-menu" aria-labelledby="dropdown07">
+                <a
+                  class="dropdown-item"
+                  href="../interactive_pages/steganography_i.html"
+                  >Steganography</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="../interactive_pages/green_screen_i.html"
+                  >Green Screen Algorithm</a
+                >
+              </div>
+            </li>
+
+            <!-- <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdown07"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Games</a
+              >
+              <div class="dropdown-menu" aria-labelledby="dropdown07">
+                <a class="dropdown-item" href="../games/tictactoe.html"
+                  >Tic-Tac-Toe</a
+                >
+                <a class="dropdown-item" href="../games/snake.html"
+                  >Snake Game</a
+                >
+              </div>
+            </li> -->
+          </ul>
         </div>
+        <!-- to show what page the user is at when screen is small -->
+        <a class="navbar-brand" id="at-smaller-screen" href="#">
+          Green Screen Algorithm
+        </a>
+      </div>
     </nav>
     <!-- breadcrumb for navigation -->
     <div class="container">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
-                <li class="breadcrumb-item"><a href="../all-projects.html">Projects</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Green Screen Algorithm</li>
-            </ol>
-        </nav>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+          <li class="breadcrumb-item">
+            <a href="./all_projects.html">Projects</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Green Screen Algorithm
+          </li>
+        </ol>
+      </nav>
     </div>
 
-
     <div class="container">
+      <div class="container">
+        <br />
+        <h1><em>Green Screen Algorithm</em></h1>
+
         <div class="container">
-            <br>
-            <h1><em>Green Screen Algorithm</em></h1>
-
-            <div class="container">
-                <small class="text-muted"><em>by Prithviraj Vernekar ·
-                        <a href="https://github.com/prithviie/green-screen.git" target="_blank">Source
-                            code</a> · <a href="../interactive-pages/green_screen_interactive.html">DIY</a>
-                    </em></small>
-            </div>
-
-            <div class="container">
-                <br>
-                <p class="text-content">
-                    Have you ever seen people over videos wherein the background of the video
-                    changes but the person stays on the same position? You must have heard about green screens
-                    for that matter. Ever wondered how that worked?
-                </p>
-
-                <p class="text-content">
-                    The Green Screen Algorithm is one the easiest yet very capable of achieving the above task. Normally
-                    the algorithm is used for video rendering, but for simplicity we will discuss how it works using
-                    images. Speaking of using the algorithm for videos, the algorithm is the same, but it acts on
-                    every single frame of the video and renders each individual frame of the video.
-                </p>
-
-                <div class="rside-image">
-                    <figure class="figure">
-                        <img src="../../images/projects/greenscreen/fg.png" class="figure-img img-fluid rounded"
-                            alt="Fig. 1: Object over a green screen (foreground_image).">
-                        <figcaption class="figure-caption">Fig. 1: Object over a green screen
-                            (<em>foreground_image</em>).</figcaption>
-                    </figure>
-                </div>
-
-                <p class="text-content">
-                    As with video rendering, we usually see a person or object infront of a green screen and the video
-                    rendering happens at the computer. But so as to work with images, we will first need an
-                    image with an object placed over a green coloured background. See Fig. 1.
-                </p>
-
-                <p class="text-content">
-                    Once we have an object which will be replaced over a background image of our choice, we will need to
-                    look at some constraints before we begin with the algorithm. The algorithm runs in way such that at
-                    every iteration (while looping through the pixels of the image), it iterates through the pixels of
-                    both the
-                    images – the background as well as the image with the object over the green background. So it is
-                    required that the dimensions of both the images match. Let the background image be
-                    <em>'bg_image'</em> and the image with the object over the green background be
-                    <em>'foreground_image'</em>.
-                </p>
-
-                <p class="text-content">
-                    Once we choose the <em>'bg_image'</em>, we can begin with algorithm.
-                </p>
-
-                <p class="text-content">
-                    Let us say we want to save the new image in <em>'output'</em>. As we begin with the iteration
-                    through the <em>'foreground_image'</em> and <em>'bg_image'</em>, we check the value of the pixel in
-                    <em>'foreground_image'</em>, if the value of the current pixel is greater than or equal to certain
-                    threshold (say 235), we select the pixel from the <em>'bg_image'</em> and put it into
-                    <em>'output'</em>, (<em><b>b2</b></em> – refer Fig. 2) else
-                    we select the pixel from the <em>'foreground_image'</em> and put it into <em>'output'</em>
-                    (<em><b>f1</b></em> – refer Fig. 2). The
-                    visual representation of the process is shown in Fig. 2.
-                </p>
-
-                <div class="center-image">
-                    <figure class="figure">
-                        <img src="../../images/projects/greenscreen/process-per-pixel.png"
-                            class="figure-img img-fluid rounded"
-                            alt="Fig. 2: Choosing of pixel according to the pixel value in foreground_image">
-                        <figcaption class="figure-caption">Fig. 2: Choosing of pixel according to the pixel value in
-                            <em>foreground_image</em>.
-                        </figcaption>
-                    </figure>
-                </div>
-
-                <div class="rside-image">
-                    <figure class="figure">
-                        <img src="../../images/projects/greenscreen/final-output.png"
-                            class="figure-img img-fluid rounded"
-                            alt="Fig. 3: The algorithm applied over a group of pixels.">
-                        <figcaption class="figure-caption">Fig. 3: The algorithm applied over a group of pixels.
-                        </figcaption>
-                    </figure>
-                </div>
-
-                <p class="text-content">
-                    If you consider a group of pixels from <em>'foreground_image'</em> as well as <em>'bg_image'</em>,
-                    the pixel replacement into <em>'output'</em> is done as shown in Fig. 3.
-                </p>
-
-                <p class="text-content">
-                    So if you run the algorithm with Fig. 1 with a background image, you can achieve an appreciable
-                    output
-                    image with the tiger placed over the background. Though it might seem not good enough to fit into
-                    such background, but adjusting the light exposure to the images can produce much better results.
-                    This implementation is done just to learn and visualize the working of the algorithm. Well there are
-                    much better and efficient ways to do this.
-                </p>
-
-                <p class="text-content">
-                    As with video, the studios where such recordings are done, they are basically well lit and mostly
-                    have adjusted lights to make it look good. If this is done with better tools and a well lit
-                    environment, then
-                    the results can be un-noticeable.
-                </p>
-
-                <p class="text-content">
-                    Running the implemented code over the Fig. 1 after adjusting the dimensions, we get the result as
-                    shown below, Fig. 4.
-                </p>
-
-                <div class="center-image">
-                    <figure class="figure">
-                        <img src="../../images/projects/greenscreen/output.png" class="figure-img img-fluid rounded"
-                            alt="Fig. 4: Running the implemented code on Fig. 1 with a background image">
-                        <figcaption class="figure-caption">Fig. 4: Running the implemented code on Fig. 1 with a
-                            background image
-                        </figcaption>
-                    </figure>
-                </div>
-
-                <p class="text-content">
-                    You can try out the process <a href="../interactive-pages/green_screen_interactive.html">here</a>. 
-                    You can find the implementation <a href="https://github.com/prithviie/green-screen.git"
-                        target="_blank">here</a>.
-                </p>
-
-                <p class="text-content">
-                    <a href="#top">Go to top</a>
-                </p>
-
-            </div>
+          <small class="text-muted"
+            ><em
+              >by Prithviraj Vernekar ·
+              <a
+                href="https://github.com/prithviie/green-screen.git"
+                target="_blank"
+                >Source code</a
+              >
+              ·
+              <a href="../interactive_pages/green_screen_i.html">DIY</a>
+            </em></small
+          >
         </div>
+
+        <div class="container">
+          <br />
+          <p class="text-content">
+            Have you ever seen people over videos wherein the background of the
+            video changes but the person stays on the same position? You must
+            have heard about green screens for that matter. Ever wondered how
+            that worked?
+          </p>
+
+          <p class="text-content">
+            The Green Screen Algorithm is one the easiest yet very capable of
+            achieving the above task. Normally the algorithm is used for video
+            rendering, but for simplicity we will discuss how it works using
+            images. Speaking of using the algorithm for videos, the algorithm is
+            the same, but it acts on every single frame of the video and renders
+            each individual frame of the video.
+          </p>
+
+          <div class="rside-image">
+            <figure class="figure">
+              <img
+                src="../../images/projects/green_screen/fg.png"
+                class="figure-img img-fluid rounded"
+                alt="Fig. 1: Object over a green screen (foreground_image)."
+              />
+              <figcaption class="figure-caption">
+                Fig. 1: Object over a green screen (<em>foreground_image</em>).
+              </figcaption>
+            </figure>
+          </div>
+
+          <p class="text-content">
+            As with video rendering, we usually see a person or object infront
+            of a green screen and the video rendering happens at the computer.
+            But so as to work with images, we will first need an image with an
+            object placed over a green coloured background. See Fig. 1.
+          </p>
+
+          <p class="text-content">
+            Once we have an object which will be replaced over a background
+            image of our choice, we will need to look at some constraints before
+            we begin with the algorithm. The algorithm runs in way such that at
+            every iteration (while looping through the pixels of the image), it
+            iterates through the pixels of both the images – the background as
+            well as the image with the object over the green background. So it
+            is required that the dimensions of both the images match. Let the
+            background image be
+            <em>'bg_image'</em> and the image with the object over the green
+            background be <em>'foreground_image'</em>.
+          </p>
+
+          <p class="text-content">
+            Once we choose the <em>'bg_image'</em>, we can begin with algorithm.
+          </p>
+
+          <p class="text-content">
+            Let us say we want to save the new image in <em>'output'</em>. As we
+            begin with the iteration through the <em>'foreground_image'</em> and
+            <em>'bg_image'</em>, we check the value of the pixel in
+            <em>'foreground_image'</em>, if the value of the current pixel is
+            greater than or equal to certain threshold (say 235), we select the
+            pixel from the <em>'bg_image'</em> and put it into
+            <em>'output'</em>, (<em><b>b2</b></em> – refer Fig. 2) else we
+            select the pixel from the <em>'foreground_image'</em> and put it
+            into <em>'output'</em> (<em><b>f1</b></em> – refer Fig. 2). The
+            visual representation of the process is shown in Fig. 2.
+          </p>
+
+          <div class="center-image">
+            <figure class="figure">
+              <img
+                src="../../images/projects/green_screen/process_per_pixel.png"
+                class="figure-img img-fluid rounded"
+                alt="Fig. 2: Choosing of pixel according to the pixel value in foreground_image"
+              />
+              <figcaption class="figure-caption">
+                Fig. 2: Choosing of pixel according to the pixel value in
+                <em>foreground_image</em>.
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="rside-image">
+            <figure class="figure">
+              <img
+                src="../../images/projects/green_screen/final_output.png"
+                class="figure-img img-fluid rounded"
+                alt="Fig. 3: The algorithm applied over a group of pixels."
+              />
+              <figcaption class="figure-caption">
+                Fig. 3: The algorithm applied over a group of pixels.
+              </figcaption>
+            </figure>
+          </div>
+
+          <p class="text-content">
+            If you consider a group of pixels from
+            <em>'foreground_image'</em> as well as <em>'bg_image'</em>, the
+            pixel replacement into <em>'output'</em> is done as shown in Fig. 3.
+          </p>
+
+          <p class="text-content">
+            So if you run the algorithm with Fig. 1 with a background image, you
+            can achieve an appreciable output image with the tiger placed over
+            the background. Though it might seem not good enough to fit into
+            such background, but adjusting the light exposure to the images can
+            produce much better results. This implementation is done just to
+            learn and visualize the working of the algorithm. Well there are
+            much better and efficient ways to do this.
+          </p>
+
+          <p class="text-content">
+            As with video, the studios where such recordings are done, they are
+            basically well lit and mostly have adjusted lights to make it look
+            good. If this is done with better tools and a well lit environment,
+            then the results can be un-noticeable.
+          </p>
+
+          <p class="text-content">
+            Running the implemented code over the Fig. 1 after adjusting the
+            dimensions, we get the result as shown below, Fig. 4.
+          </p>
+
+          <div class="center-image">
+            <figure class="figure">
+              <img
+                src="../../images/projects/green_screen/output.png"
+                class="figure-img img-fluid rounded"
+                alt="Fig. 4: Running the implemented code on Fig. 1 with a background image"
+              />
+              <figcaption class="figure-caption">
+                Fig. 4: Running the implemented code on Fig. 1 with a background
+                image
+              </figcaption>
+            </figure>
+          </div>
+
+          <p class="text-content">
+            You can try out the process
+            <a href="../interactive_pages/green_screen_i.html">here</a>. You can
+            find the implementation
+            <a
+              href="https://github.com/prithviie/green-screen.git"
+              target="_blank"
+              >here</a
+            >.
+          </p>
+
+          <p class="text-content">
+            <a href="#top">Go to top</a>
+          </p>
+        </div>
+      </div>
     </div>
 
-    <br>
+    <br />
     <div class="container">
-        <footer class="footer mt-auto py-3">
-            <div class="container">
-                <span class="text-muted">
-                    <p id="footer-text">
-                        <a href="https://github.com/prithviie" target="_blank">Github</a> |
-                        <a href="mailto:prithvi78900@gmail.com" target="_blank">Email</a>
-                    </p>
-                    <small class="text-muted">
-                        In progress..
-                    </small>
-                </span>
-            </div>
-        </footer>
+      <footer class="footer mt-auto py-3">
+        <div class="container">
+          <span class="text-muted">
+            <p id="footer-text">
+              <a href="https://github.com/prithviie" target="_blank">Github</a>
+              |
+              <a href="mailto:prithvi78900@gmail.com" target="_blank">Email</a>
+            </p>
+            <small class="text-muted"> In progress.. </small>
+          </span>
+        </div>
+      </footer>
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

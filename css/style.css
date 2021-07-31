@@ -1,9 +1,14 @@
+:root {
+  --textColor: #262626;
+  --bgColor: #f8f8ff;
+}
 /* main -- in all */
 html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #f8f8ff;
+  background-color: var(--bgColor);
+  color: var(--textColor);
 }
 #mainjumbotron {
   color: #f5f5f5;
@@ -19,15 +24,8 @@ body {
 .breadcrumb {
   margin-bottom: 0;
   float: right;
-  background-color: #f8f8ff;
+  background-color: var(--bgColor);
 }
-/* for a pushed footer- for smaller webpages */
-/* .footer-pushed {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-} */
 
 /* to show what page the user is at when screen is small */
 #at-smaller-screen {
@@ -78,12 +76,12 @@ body {
 /* for all projects  */
 
 /* for canvases - for interactive pages */
-canvas{
-  background-color: #f8f8ff;
+canvas {
+  background-color: var(--bgColor);
   width: 50%;
-  margin-left: 3%; 
+  margin-left: 3%;
 }
-.p5Canvas{
+.p5Canvas {
   width: 40%;
   margin-left: 14%;
 }

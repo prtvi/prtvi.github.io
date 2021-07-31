@@ -1,145 +1,209 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="./images/icons/cursor.ico" type="image/icon type">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./images/icons/cursor.ico" type="image/icon type" />
 
     <title>Prithvi · Home</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07"
-                aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarsExample07"
+          aria-controls="navbarsExample07"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarsExample07">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="./html/all-projects.html">Projects</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Music</a>
-                    </li> -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Interactive Pages</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown07">
-                            <a class="dropdown-item"
-                                href="./html/interactive-pages/stegano_interactive.html">Steganography</a>
-                            <a class="dropdown-item" href="./html/interactive-pages/green_screen_interactive.html">Green
-                                Screen</a>
-                                <a class="dropdown-item" href="./html/interactive-pages/tictactoe.html">Tic-Tac-Toe</a>
-                            <a class="dropdown-item" href="./html/interactive-pages/bubble_sort_vis.html">Bubble Sort Visualization</a>
-                            <!-- <a class="dropdown-item" href="#">Snake</a> -->
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <!-- to show what page the user is at when screen is small -->
-            <a class="navbar-brand" id="at-smaller-screen" href="#">
-                Home
-            </a>
+        <div class="collapse navbar-collapse" id="navbarsExample07">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./html/projects/all_projects.html"
+                >Projects</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdown07"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Interactive Pages</a
+              >
+              <div class="dropdown-menu" aria-labelledby="dropdown07">
+                <a
+                  class="dropdown-item"
+                  href="./html/interactive_pages/steganography_i.html"
+                  >Steganography</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="./html/interactive_pages/green_screen_i.html"
+                  >Green Screen Algorithm</a
+                >
+              </div>
+            </li>
+
+            <!-- <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdown07"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Games</a
+              >
+              <div class="dropdown-menu" aria-labelledby="dropdown07">
+                <a class="dropdown-item" href="./html/games/tictactoe.html"
+                  >Tic-Tac-Toe</a
+                >
+                <a class="dropdown-item" href="./html/games/snake.html"
+                  >Snake Game</a
+                >
+              </div>
+            </li> -->
+          </ul>
         </div>
+        <!-- to show what page the user is at when screen is small -->
+        <a class="navbar-brand" id="at-smaller-screen" href="#"> Home </a>
+      </div>
     </nav>
-    <br>
+    <br />
 
     <div class="container">
-        <div class="container">
-
-            <div class="jumbotron jumbotron-fluid" id="mainjumbotron">
-                <div class="container">
-                    <h1 class="display-4">Welcome</h1>
-                    <p class="lead"></p>
-                </div>
-            </div>
-
-            <h1><em>Recent projects:</em> </h1>
-            <br>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2>Steganography</h2>
-                        <p>Ever wondered how to store or hide information in some commonly used files? Well,
-                            Steganography
-                            helps you do just that. Using MATLAB, I implemented the process of Steganography. The
-                            implementation involves hiding an image inside of another as well as hiding plain text
-                            inside of
-                            an image.</p>
-
-                        <p><a class="btn btn-secondary bg-success" href="./html/projects/stegano.html"
-                                role="button">View
-                                details »</a></p>
-                    </div>
-
-                    <div class="col-md-6">
-                        <h2>Password Manager</h2>
-                        <p>Do you have too many passwords and can't remember them? Well a password manager can help you
-                            with
-                            that. Using an SQL database, you can build a simple password manager.</p>
-                        <p><a class="btn btn-secondary bg-success" href="./html/projects/pwmngr.html" role="button">View
-                                details »</a></p>
-                    </div>
-
-                    <div class="col-md-6">
-                        <h2>Green Screen Algorithm</h2>
-                        <p>Have you ever seen people over videos wherein the background of the video changes but the
-                            person
-                            stays on the same position? You must have heard about green screens for that matter. Ever
-                            wondered how that worked?</p>
-                        <p><a class="btn btn-secondary bg-success" href="./html/projects/green_screen.html"
-                                role="button">View details »</a></p>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="container">
-                <footer class="footer mt-auto py-3">
-                    <div class="container">
-                        <span class="text-muted">
-                            <p id="footer-text">
-                                <a href="https://github.com/prithviie" target="_blank">Github</a> |
-                                <a href="mailto:prithvi78900@gmail.com" target="_blank">Email</a>
-                            </p>
-                            <small class="text-muted">
-                                In progress..
-                            </small>
-                        </span>
-                    </div>
-                </footer>
-            </div>
-
+      <div class="container">
+        <div class="jumbotron jumbotron-fluid" id="mainjumbotron">
+          <div class="container">
+            <h1 class="display-4">Welcome</h1>
+            <p class="lead"></p>
+          </div>
         </div>
+
+        <h1><em>Recent projects:</em></h1>
+        <br />
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h2>Steganography</h2>
+              <p>
+                Ever wondered how to store or hide information in some commonly
+                used files? Well, Steganography helps you do just that. Using
+                MATLAB, I implemented the process of Steganography. The
+                implementation involves hiding an image inside of another as
+                well as hiding plain text inside of an image.
+              </p>
+
+              <p>
+                <a
+                  class="btn btn-secondary bg-success"
+                  href="./html/projects/steganography.html"
+                  role="button"
+                  >View details »</a
+                >
+              </p>
+            </div>
+
+            <div class="col-md-6">
+              <h2>Password Manager</h2>
+              <p>
+                Do you have too many passwords and can't remember them? Well a
+                password manager can help you with that. Using an SQL database,
+                you can build a simple password manager.
+              </p>
+              <p>
+                <a
+                  class="btn btn-secondary bg-success"
+                  href="./html/projects/passwd_mngr.html"
+                  role="button"
+                  >View details »</a
+                >
+              </p>
+            </div>
+
+            <div class="col-md-6">
+              <h2>Green Screen Algorithm</h2>
+              <p>
+                Have you ever seen people over videos wherein the background of
+                the video changes but the person stays on the same position? You
+                must have heard about green screens for that matter. Ever
+                wondered how that worked?
+              </p>
+              <p>
+                <a
+                  class="btn btn-secondary bg-success"
+                  href="./html/projects/green_screen.html"
+                  role="button"
+                  >View details »</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <footer class="footer mt-auto py-3">
+            <div class="container">
+              <span class="text-muted">
+                <p id="footer-text">
+                  <a href="https://github.com/prithviie" target="_blank"
+                    >Github</a
+                  >
+                  |
+                  <a href="mailto:prithvi78900@gmail.com" target="_blank"
+                    >Email</a
+                  >
+                </p>
+                <small class="text-muted"> In progress.. </small>
+              </span>
+            </div>
+          </footer>
+        </div>
+      </div>
     </div>
 
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
