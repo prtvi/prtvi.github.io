@@ -121,6 +121,7 @@ canvas {
 
 .list-item-link {
   text-decoration: none;
+  font-size: 2vw;
   color: var(--textColor);
 }
 
