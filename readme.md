@@ -38,7 +38,8 @@ https://prtvi.github.io/sorting-visualizer/
 
 <br>
 
-<details>
+<details open>
+    
 <summary>Project links for mobile</summary>
 
 |                                   Project                                    |
