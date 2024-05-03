@@ -40,65 +40,39 @@
 				text-align: left;
 			}
 			li {
-				margin: 8px;
+				margin: 10px;
 			}
 		</style>
 
-		<title>All of my projects</title>
+		<title>Prithviraj Vernekar - Projects</title>
 	</head>
 	<body>
 		<div class="content">
 			<h1>All of my projects</h1>
-
-			<ul>
-				<li>
-					<a
-						href="https://astar-visualisation.netlify.app/"
-						target="_blank"
-					>
-						Astar shortest path visualisation
-					</a>
-				</li>
-
-				<li>
-					<a
-						href="https://rat-in-a-maze-visualisation.netlify.app/"
-						target="_blank"
-					>
-						Rat in a maze visualiser
-					</a>
-				</li>
-
-				<li>
-					<a href="https://emojiipedia.netlify.app/" target="_blank">
-						Emojipedia
-					</a>
-				</li>
-
-				<li>
-					<a
-						href="https://prtvi.github.io/sorting-visualizer/"
-						target="_blank"
-					>
-						Sorting visualiser
-					</a>
-				</li>
-
-				<li>
-					<a
-						href="https://prtvi.github.io/javascript-projects/"
-						target="_blank"
-					>
-						Javascript projects
-					</a>
-				</li>
-
-				<li>
-					<a href="https://hotwheeeels.netlify.app/" target="_blank">
-						Hot Wheels showcase
-					</a>
-				</li>
-			</ul>
+			<ul></ul>
 		</div>
 	</body>
+	<script>
+		function getLi(item) {
+			const a = document.createElement('a');
+			a.textContent = item.title;
+			a.href = item.hosted_url || item.repo_url;
+			a.target = '_blank';
+
+			const li = document.createElement('li');
+			li.appendChild(a);
+
+			return li;
+		}
+
+		const url =
+			'https://raw.githubusercontent.com/prtvi/prtvi.github.io/master/allprojects.json';
+
+		fetch(url)
+			.then(response => response.json())
+			.then(data => {
+				const ul = document.querySelector('ul');
+				data.forEach(item => ul.appendChild(getLi(item)));
+			});
+	</script>
 </html>
