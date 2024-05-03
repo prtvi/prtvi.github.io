@@ -6,7 +6,7 @@
 		"is_hosted": true,
 		"hosted_url": "https://hotwheeeels.netlify.app/",
 		"project_category": ["webdev", "fullstack"],
-		"img_src": "",
+		"img_src": "./assets/projects/hw.png",
 		"img_alt": "hot wheels collection"
 	},
 	{
@@ -15,7 +15,7 @@
 		"repo_url": "https://github.com/prtvi/astar-vis",
 		"is_hosted": true,
 		"hosted_url": "https://astar-visualisation.netlify.app/",
-		"project_category": ["webdev"],
+		"project_category": ["webdev", "algorithms"],
 		"img_src": "./assets/projects/astar.png",
 		"img_alt": "A* algorithm visualizer"
 	},
@@ -25,7 +25,7 @@
 		"repo_url": "https://github.com/prtvi/rat-in-a-maze",
 		"is_hosted": true,
 		"hosted_url": "https://rat-in-a-maze-visualisation.netlify.app/",
-		"project_category": ["webdev"],
+		"project_category": ["webdev", "algorithms"],
 		"img_src": "./assets/projects/rat-in-a-maze.png",
 		"img_alt": "rat in a maze algorithm visualizer"
 	},
@@ -45,7 +45,7 @@
 		"repo_url": "https://github.com/prtvi/sorting-visualizer",
 		"is_hosted": true,
 		"hosted_url": "https://prtvi.github.io/sorting-visualizer",
-		"project_category": ["webdev"],
+		"project_category": ["webdev", "algorithms"],
 		"img_src": "./assets/projects/sorting-visualizer.png",
 		"img_alt": "sorting visualizer"
 	},
@@ -56,7 +56,7 @@
 		"is_hosted": true,
 		"hosted_url": "https://prtvi.github.io/javascript-projects/image-to-ascii/index.html",
 		"project_category": ["webdev"],
-		"img_src": "",
+		"img_src": "./assets/projects/ita.png",
 		"img_alt": "image to ascii demo"
 	},
 	{
@@ -65,8 +65,8 @@
 		"repo_url": "https://github.com/prtvi/javascript-projects/tree/master/flappy-bird",
 		"is_hosted": true,
 		"hosted_url": "https://prtvi.github.io/javascript-projects/flappy-bird/index.html",
-		"project_category": ["webdev"],
-		"img_src": "",
+		"project_category": ["webdev", "games"],
+		"img_src": "./assets/projects/flappy.png",
 		"img_alt": "flappy bird"
 	},
 	{
@@ -90,23 +90,13 @@
 		"img_alt": "javascript projects"
 	},
 	{
-		"title": "Portfolio",
-		"desc": "My portfolio",
-		"repo_url": "https://github.com/prtvi/portfolio",
-		"is_hosted": true,
-		"hosted_url": "https://prtvi.github.io/portfolio/",
-		"project_category": ["webdev"],
-		"img_src": "",
-		"img_alt": "javascript projects"
-	},
-	{
 		"title": "Expense Tracker",
 		"desc": "A simple expense tracker built in Go",
 		"repo_url": "https://github.com/prtvi/expense-tracker",
 		"is_hosted": false,
 		"hosted_url": "",
-		"project_category": ["fullstack", "webdev"],
-		"img_src": ".",
+		"project_category": ["webdev", "fullstack"],
+		"img_src": "./assets/projects/expense-tracker.png",
 		"img_alt": "expense tracker"
 	},
 	{
@@ -145,8 +135,8 @@
 		"repo_url": "https://github.com/prtvi/mini-projects/tree/master/sudoku-solver",
 		"is_hosted": false,
 		"hosted_url": "",
-		"project_category": ["other"],
-		"img_src": "",
+		"project_category": ["algorithms", "other"],
+		"img_src": "./assets/projects/sudoku.png",
 		"img_alt": "sudoku solver"
 	},
 	{
@@ -155,7 +145,7 @@
 		"repo_url": "https://github.com/prtvi/steganography",
 		"is_hosted": false,
 		"hosted_url": "",
-		"project_category": ["other"],
+		"project_category": ["algorithms", "other"],
 		"img_src": "./assets/projects/steganography.png",
 		"img_alt": "steganography"
 	},
@@ -165,7 +155,7 @@
 		"repo_url": "https://github.com/prtvi/green-screening-implementation",
 		"is_hosted": false,
 		"hosted_url": "",
-		"project_category": ["other"],
+		"project_category": ["algorithms", "other"],
 		"img_src": "./assets/projects/green-screen.png",
 		"img_alt": "green screening implementation"
 	},
@@ -175,7 +165,7 @@
 		"repo_url": "https://github.com/prtvi/mso",
 		"is_hosted": false,
 		"hosted_url": "",
-		"project_category": ["other"],
+		"project_category": ["algorithms", "other"],
 		"img_src": "./assets/projects/mso.png",
 		"img_alt": "mapping system for organizations"
 	},
