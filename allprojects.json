@@ -1,15 +1,17 @@
 [
 	{
 		"title": "Hot Wheels Showcase",
+		"desc": "My hot wheels 🏎️ collection showcase!",
 		"repo_url": "https://github.com/prtvi/hotwheeeels",
 		"is_hosted": true,
 		"hosted_url": "https://hotwheeeels.netlify.app/",
-		"project_category": ["webdev"],
+		"project_category": ["webdev", "fullstack"],
 		"img_src": "",
 		"img_alt": "hot wheels collection"
 	},
 	{
-		"title": "A* shortest path Visualization",
+		"title": "A* shortest path visualization",
+		"desc": "See the A* shortest path algorithm in action!",
 		"repo_url": "https://github.com/prtvi/astar-vis",
 		"is_hosted": true,
 		"hosted_url": "https://astar-visualisation.netlify.app/",
@@ -18,7 +20,8 @@
 		"img_alt": "A* algorithm visualizer"
 	},
 	{
-		"title": "Rat in a Maze Visualization",
+		"title": "Rat in a Maze visualization",
+		"desc": "See the rat in a maze algorithm in action!",
 		"repo_url": "https://github.com/prtvi/rat-in-a-maze",
 		"is_hosted": true,
 		"hosted_url": "https://rat-in-a-maze-visualisation.netlify.app/",
@@ -28,6 +31,7 @@
 	},
 	{
 		"title": "Emojipedia",
+		"desc": "A dictionary - search tool for emojis!",
 		"repo_url": "https://github.com/prtvi/emojipedia",
 		"is_hosted": true,
 		"hosted_url": "https://emojiipedia.netlify.app/",
@@ -37,6 +41,7 @@
 	},
 	{
 		"title": "Sorting Visualizer",
+		"desc": "See the sorting algorithms in action!",
 		"repo_url": "https://github.com/prtvi/sorting-visualizer",
 		"is_hosted": true,
 		"hosted_url": "https://prtvi.github.io/sorting-visualizer",
@@ -46,6 +51,7 @@
 	},
 	{
 		"title": "Image to ASCII",
+		"desc": "Convert any image into ASCII art!",
 		"repo_url": "https://github.com/prtvi/javascript-projects/tree/master/image-to-ascii",
 		"is_hosted": true,
 		"hosted_url": "https://prtvi.github.io/javascript-projects/image-to-ascii/index.html",
@@ -55,6 +61,7 @@
 	},
 	{
 		"title": "Flappy Bird",
+		"desc": "A simple clone of the flappy bird game!",
 		"repo_url": "https://github.com/prtvi/javascript-projects/tree/master/flappy-bird",
 		"is_hosted": true,
 		"hosted_url": "https://prtvi.github.io/javascript-projects/flappy-bird/index.html",
@@ -64,6 +71,7 @@
 	},
 	{
 		"title": "Typing Test",
+		"desc": "Check your typing speed!",
 		"repo_url": "https://github.com/prtvi/javascript-projects/tree/master/typing-test",
 		"is_hosted": true,
 		"hosted_url": "https://prtvi.github.io/javascript-projects/typing-test/index.html",
@@ -73,6 +81,7 @@
 	},
 	{
 		"title": "JavaScript Projects",
+		"desc": "An assortment of my JavaScript projects",
 		"repo_url": "https://github.com/prtvi/javascript-projects",
 		"is_hosted": true,
 		"hosted_url": "https://prtvi.github.io/javascript-projects/",
@@ -82,6 +91,7 @@
 	},
 	{
 		"title": "Portfolio",
+		"desc": "My portfolio",
 		"repo_url": "https://github.com/prtvi/portfolio",
 		"is_hosted": true,
 		"hosted_url": "https://prtvi.github.io/portfolio/",
@@ -91,33 +101,37 @@
 	},
 	{
 		"title": "Expense Tracker",
+		"desc": "A simple expense tracker built in Go",
 		"repo_url": "https://github.com/prtvi/expense-tracker",
 		"is_hosted": false,
 		"hosted_url": "",
-		"project_category": ["webdev"],
+		"project_category": ["fullstack", "webdev"],
 		"img_src": ".",
 		"img_alt": "expense tracker"
 	},
 	{
 		"title": "Joke API",
+		"desc": "A simple joke API built in Go",
 		"repo_url": "https://github.com/prtvi/joke-api",
 		"is_hosted": false,
 		"hosted_url": "",
-		"project_category": ["webdev"],
+		"project_category": ["api"],
 		"img_src": "./assets/projects/joke-api.png",
 		"img_alt": "joke API"
 	},
 	{
 		"title": "Smart Agricare",
+		"desc": "A full stack implementation of smart agriculture methods",
 		"repo_url": "https://github.com/gokulBalaG/Smart-Agricare",
 		"is_hosted": false,
 		"hosted_url": "",
-		"project_category": ["iot", "ml", "webdev"],
+		"project_category": ["iot", "ml", "webdev", "fullstack"],
 		"img_src": "./assets/projects/smart-agricare.png",
 		"img_alt": "smart agricare"
 	},
 	{
 		"title": "Automation using hand gestures",
+		"desc": "Your very own home automation system",
 		"repo_url": "https://github.com/prtvi/automation-using-hand-gestures",
 		"is_hosted": false,
 		"hosted_url": "",
@@ -126,7 +140,18 @@
 		"img_alt": "automation using hand gestures demo picture"
 	},
 	{
+		"title": "Sudoku Solver",
+		"desc": "A simple sudoku solver",
+		"repo_url": "https://github.com/prtvi/mini-projects/tree/master/sudoku-solver",
+		"is_hosted": false,
+		"hosted_url": "",
+		"project_category": ["other"],
+		"img_src": "",
+		"img_alt": "sudoku solver"
+	},
+	{
 		"title": "Steganography",
+		"desc": "A basic implementation of steganography",
 		"repo_url": "https://github.com/prtvi/steganography",
 		"is_hosted": false,
 		"hosted_url": "",
@@ -136,6 +161,7 @@
 	},
 	{
 		"title": "Green Screening implementation",
+		"desc": "Implementation of the green screen algorithm",
 		"repo_url": "https://github.com/prtvi/green-screening-implementation",
 		"is_hosted": false,
 		"hosted_url": "",
@@ -145,6 +171,7 @@
 	},
 	{
 		"title": "Mapping system for organizations",
+		"desc": "Mapping system for orgs",
 		"repo_url": "https://github.com/prtvi/mso",
 		"is_hosted": false,
 		"hosted_url": "",
@@ -154,6 +181,7 @@
 	},
 	{
 		"title": "Password Manager",
+		"desc": "A simple password manager built in cpp",
 		"repo_url": "https://github.com/prtvi/passwordManager",
 		"is_hosted": false,
 		"hosted_url": "",
