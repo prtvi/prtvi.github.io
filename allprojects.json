@@ -1,0 +1,164 @@
+[
+	{
+		"title": "Hot Wheels Showcase",
+		"repo_url": "https://github.com/prtvi/hotwheeeels",
+		"is_hosted": true,
+		"hosted_url": "https://hotwheeeels.netlify.app/",
+		"project_category": ["webdev"],
+		"img_src": "",
+		"img_alt": "hot wheels collection"
+	},
+	{
+		"title": "A* shortest path Visualization",
+		"repo_url": "https://github.com/prtvi/astar-vis",
+		"is_hosted": true,
+		"hosted_url": "https://astar-visualisation.netlify.app/",
+		"project_category": ["webdev"],
+		"img_src": "./assets/projects/astar.png",
+		"img_alt": "A* algorithm visualizer"
+	},
+	{
+		"title": "Rat in a Maze Visualization",
+		"repo_url": "https://github.com/prtvi/rat-in-a-maze",
+		"is_hosted": true,
+		"hosted_url": "https://rat-in-a-maze-visualisation.netlify.app/",
+		"project_category": ["webdev"],
+		"img_src": "./assets/projects/rat-in-a-maze.png",
+		"img_alt": "rat in a maze algorithm visualizer"
+	},
+	{
+		"title": "Emojipedia",
+		"repo_url": "https://github.com/prtvi/emojipedia",
+		"is_hosted": true,
+		"hosted_url": "https://emojiipedia.netlify.app/",
+		"project_category": ["webdev"],
+		"img_src": "./assets/projects/emojipedia.png",
+		"img_alt": "emojipedia application snapshot"
+	},
+	{
+		"title": "Sorting Visualizer",
+		"repo_url": "https://github.com/prtvi/sorting-visualizer",
+		"is_hosted": true,
+		"hosted_url": "https://prtvi.github.io/sorting-visualizer",
+		"project_category": ["webdev"],
+		"img_src": "./assets/projects/sorting-visualizer.png",
+		"img_alt": "sorting visualizer"
+	},
+	{
+		"title": "Image to ASCII",
+		"repo_url": "https://github.com/prtvi/javascript-projects/tree/master/image-to-ascii",
+		"is_hosted": true,
+		"hosted_url": "https://prtvi.github.io/javascript-projects/image-to-ascii/index.html",
+		"project_category": ["webdev"],
+		"img_src": "",
+		"img_alt": "image to ascii demo"
+	},
+	{
+		"title": "Flappy Bird",
+		"repo_url": "https://github.com/prtvi/javascript-projects/tree/master/flappy-bird",
+		"is_hosted": true,
+		"hosted_url": "https://prtvi.github.io/javascript-projects/flappy-bird/index.html",
+		"project_category": ["webdev"],
+		"img_src": "",
+		"img_alt": "flappy bird"
+	},
+	{
+		"title": "Typing Test",
+		"repo_url": "https://github.com/prtvi/javascript-projects/tree/master/typing-test",
+		"is_hosted": true,
+		"hosted_url": "https://prtvi.github.io/javascript-projects/typing-test/index.html",
+		"project_category": ["webdev"],
+		"img_src": "./assets/projects/typing-test.png",
+		"img_alt": "typing test"
+	},
+	{
+		"title": "JavaScript Projects",
+		"repo_url": "https://github.com/prtvi/javascript-projects",
+		"is_hosted": true,
+		"hosted_url": "https://prtvi.github.io/javascript-projects/",
+		"project_category": ["webdev"],
+		"img_src": "",
+		"img_alt": "javascript projects"
+	},
+	{
+		"title": "Portfolio",
+		"repo_url": "https://github.com/prtvi/portfolio",
+		"is_hosted": true,
+		"hosted_url": "https://prtvi.github.io/portfolio/",
+		"project_category": ["webdev"],
+		"img_src": "",
+		"img_alt": "javascript projects"
+	},
+	{
+		"title": "Expense Tracker",
+		"repo_url": "https://github.com/prtvi/expense-tracker",
+		"is_hosted": false,
+		"hosted_url": "",
+		"project_category": ["webdev"],
+		"img_src": ".",
+		"img_alt": "expense tracker"
+	},
+	{
+		"title": "Joke API",
+		"repo_url": "https://github.com/prtvi/joke-api",
+		"is_hosted": false,
+		"hosted_url": "",
+		"project_category": ["webdev"],
+		"img_src": "./assets/projects/joke-api.png",
+		"img_alt": "joke API"
+	},
+	{
+		"title": "Smart Agricare",
+		"repo_url": "https://github.com/gokulBalaG/Smart-Agricare",
+		"is_hosted": false,
+		"hosted_url": "",
+		"project_category": ["iot", "ml", "webdev"],
+		"img_src": "./assets/projects/smart-agricare.png",
+		"img_alt": "smart agricare"
+	},
+	{
+		"title": "Automation using hand gestures",
+		"repo_url": "https://github.com/prtvi/automation-using-hand-gestures",
+		"is_hosted": false,
+		"hosted_url": "",
+		"project_category": ["iot", "ml"],
+		"img_src": "./assets/projects/auh.png",
+		"img_alt": "automation using hand gestures demo picture"
+	},
+	{
+		"title": "Steganography",
+		"repo_url": "https://github.com/prtvi/steganography",
+		"is_hosted": false,
+		"hosted_url": "",
+		"project_category": ["other"],
+		"img_src": "./assets/projects/steganography.png",
+		"img_alt": "steganography"
+	},
+	{
+		"title": "Green Screening implementation",
+		"repo_url": "https://github.com/prtvi/green-screening-implementation",
+		"is_hosted": false,
+		"hosted_url": "",
+		"project_category": ["other"],
+		"img_src": "./assets/projects/green-screen.png",
+		"img_alt": "green screening implementation"
+	},
+	{
+		"title": "Mapping system for organizations",
+		"repo_url": "https://github.com/prtvi/mso",
+		"is_hosted": false,
+		"hosted_url": "",
+		"project_category": ["other"],
+		"img_src": "./assets/projects/mso.png",
+		"img_alt": "mapping system for organizations"
+	},
+	{
+		"title": "Password Manager",
+		"repo_url": "https://github.com/prtvi/passwordManager",
+		"is_hosted": false,
+		"hosted_url": "",
+		"project_category": ["other"],
+		"img_src": "./assets/projects/password-manager.png",
+		"img_alt": "password manager"
+	}
+]
