@@ -86,7 +86,7 @@
 		"is_hosted": true,
 		"hosted_url": "https://prtvi.github.io/javascript-projects/",
 		"project_category": ["webdev"],
-		"img_src": "",
+		"img_src": "./assets/projects/jsp.png",
 		"img_alt": "javascript projects"
 	},
 	{
