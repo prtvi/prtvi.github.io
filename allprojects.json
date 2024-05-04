@@ -183,6 +183,7 @@
 	],
 	"meta": {
 		"project_category_labels": {
+			"all": "All",
 			"webdev": "Web Dev",
 			"fullstack": "Fullstack apps",
 			"algorithms": "Algorithms",
