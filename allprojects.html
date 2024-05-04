@@ -61,7 +61,7 @@
 		function getLi(item) {
 			const a = document.createElement('a');
 			a.textContent = item.title;
-			a.href = item.hosted_url || item.repo_url;
+			a.href = item.is_hosted ? item.hosted_url : item.repo_url;
 			a.target = '_blank';
 
 			const li = document.createElement('li');
