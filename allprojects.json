@@ -11,6 +11,16 @@
 			"img_alt": "hot wheels collection"
 		},
 		{
+			"title": "My EBC trek map",
+			"desc": "Interactive visualization of my Everest Base Camp trek with pictures on the trail.",
+			"repo_url": "https://github.com/prtvi/ebc-trek-map",
+			"is_hosted": true,
+			"hosted_url": "https://ebc-trek-map.netlify.app/",
+			"project_category": ["webdev"],
+			"img_src": "./assets/projects/ebc.png",
+			"img_alt": "EBC trek app"
+		},
+		{
 			"title": "A* shortest path visualization",
 			"desc": "See the A* shortest path algorithm in action!",
 			"repo_url": "https://github.com/prtvi/astar-vis",
