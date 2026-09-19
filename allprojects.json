@@ -1,6 +1,16 @@
 {
 	"projects": [
 		{
+			"title": "Sorta",
+			"desc": "A UI tool for segregating pictures.",
+			"repo_url": "https://github.com/prtvi/sorta",
+			"is_hosted": false,
+			"hosted_url": "",
+			"project_category": ["webdev", "other"],
+			"img_src": "./assets/projects/sorta.png",
+			"img_alt": "local picture classifying tool"
+		},
+		{
 			"title": "Hot Wheels Showcase",
 			"desc": "My hot wheels 🏎️ collection showcase!",
 			"repo_url": "https://github.com/prtvi/hotwheeeels",
