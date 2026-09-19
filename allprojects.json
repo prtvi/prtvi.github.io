@@ -2,7 +2,7 @@
 	"projects": [
 		{
 			"title": "Sorta",
-			"desc": "A UI tool for segregating pictures.",
+			"desc": "Local-first photo culling for camera dumps.",
 			"repo_url": "https://github.com/prtvi/sorta",
 			"is_hosted": false,
 			"hosted_url": "",
